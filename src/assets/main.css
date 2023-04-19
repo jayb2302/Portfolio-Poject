@@ -1,0 +1,36 @@
+@import './base.css';
+@font-face {
+  font-family: republica;
+  src: url(../src/assets/republica.otf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  /* max-width: 1280px; */
+  margin: 0 0;
+  padding: 0rem;
+  font-weight: normal;
+  font-family: republica;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(189, 201, 245);
+  transition: 0.4s;
+}
+
+/* @media (hover: hover) {
+  a:hover {
+   color: hsla(0, 0%, 55%, 0.8) ;
+  }
+} */
+
+@media (min-width: 1024px) {
+
+
+
+}
