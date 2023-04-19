@@ -5,8 +5,9 @@
                 <div class="modal bg-slate-800  shadow-md shadow-slate-500 shadow-inner w-96 p-7 h-1/2 rounded-lg " role="dialog" ref="modal">
                     <button class="absolute right-3 top-2 z-20" @click="$emit('close')"><font-awesome-icon style="color: aliceblue;" id="closebutton" :icon="['fas', 'x']" /></button>
                   
-                    
-                     <div class="portfolio-container overflow-hidden hover:overflow-auto scrollbar-thin scrollbar-thumb-cyan-700 scrollbar-track-sky-200  ">
+                   <!-- <div class="portfolio-container overflow-hidden hover:overflow-auto scrollbar-thin scrollbar-thumb-cyan-700 scrollbar-track-sky-200  "> -->
+
+                     <div class="portfolio-container overflow-hidden hover:overflow-auto scrollbar ">
 
                         <div class="portfolio-item flex flex-col h-96" v-if="portfolioDetails" >            
                             
@@ -137,6 +138,15 @@ import { toRefs, computed, } from 'vue'
         padding-top: 0%;
         margin-bottom: 1%;
       }
+     .Photos {
+        color: rgba(238, 188, 62, 0.873);
+        border-left: 2px solid  rgba(238, 188, 62, 0.873);
+        padding-left: 10px;
+        font-family: republica;
+        height: 20px;
+        padding-top: 0%;
+        margin-bottom: 1%;
+    }
 
     a {
         font-size: 10px;

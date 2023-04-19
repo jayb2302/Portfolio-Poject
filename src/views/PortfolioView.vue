@@ -108,8 +108,8 @@
         font-size: .7em;
       }
       .Video {
-        color: rgba(206, 80, 187, 0.796);
-        border-left: 2px solid rgba(206, 80, 187, 0.796);
+        color: rgba(179, 206, 80, 0.796);
+        border-left: 2px solid rgba(179, 206, 80, 0.796);
         padding-left: 10px;
       }
       .Web {
@@ -120,6 +120,11 @@
       .Design {
         color: rgba(230, 86, 215, 0.873);
         border-left: 2px solid  rgba(230, 86, 215, 0.873);
+        padding-left: 10px;
+      }
+      .Photos {
+        color: rgba(238, 188, 62, 0.873);
+        border-left: 2px solid  rgba(238, 188, 62, 0.873);
         padding-left: 10px;
       }
       img {

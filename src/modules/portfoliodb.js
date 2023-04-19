@@ -70,6 +70,36 @@ const getPortfolio = () => {
             category: 'Video',
             detail: 'Kölski is a suit company in Iceland that specializes in classy and stylish suits. They had a gentlemens night and asked me to record it and edit a video for future advertising. '
         },
+        {
+            id: 7,
+            title: 'NOROM',
+            description: 'CAMERA - LIGHTROOM',
+            image: '../../src/assets/kolski.webp',
+            linkname: 'WEBSITE',
+            link: 'https://norom.net/',
+            category: 'Photos',
+            detail: 'Kölski is a suit company in Iceland that specializes in classy and stylish suits. They had a gentlemens night and asked me to record it and edit a video for future advertising. '
+        },
+        {
+            id: 6,
+            title: 'Kölski',
+            description: 'PREMIERE PRO',
+            image: '../../src/assets/kolski.webp',
+            linkname: 'WEBSITE',
+            link: 'https://www.kolski.is/',
+            category: 'Video',
+            detail: 'Kölski is a suit company in Iceland that specializes in classy and stylish suits. They had a gentlemens night and asked me to record it and edit a video for future advertising. '
+        },
+        {
+            id: 6,
+            title: 'Kölski',
+            description: 'PREMIERE PRO',
+            image: '../../src/assets/kolski.webp',
+            linkname: 'WEBSITE',
+            link: 'https://www.kolski.is/',
+            category: 'Video',
+            detail: 'Kölski is a suit company in Iceland that specializes in classy and stylish suits. They had a gentlemens night and asked me to record it and edit a video for future advertising. '
+        },
     ])
     return {
         state
