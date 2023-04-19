@@ -74,11 +74,11 @@ const getPortfolio = () => {
             id: 7,
             title: 'NOROM',
             description: 'CAMERA - LIGHTROOM',
-            image: '../../src/assets/kolski.webp',
+            image: '../../src/assets/norom.webp',
             linkname: 'WEBSITE',
             link: 'https://norom.net/',
             category: 'Photos',
-            detail: 'Kölski is a suit company in Iceland that specializes in classy and stylish suits. They had a gentlemens night and asked me to record it and edit a video for future advertising. '
+            detail: 'NOROM is an online clothing store operating in Miami, USA. Its focus is to provide people opportunities. I have done some fashion photography for the online store. Those projects have been both in Miami and in Iceland. '
         },
         {
             id: 6,
