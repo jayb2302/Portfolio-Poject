@@ -37,7 +37,7 @@ import { RouterLink, RouterView } from 'vue-router'
   }
 header {
   display: flex;
-  background-image: url(../src/assets/bg1.jpg);
+  background-image: url(../src/assets/bg1.png);
   background-size: cover;
   background-blend-mode: screen;
   background-color: transparent;
@@ -59,7 +59,7 @@ header {
     font-family: republica;
     text-transform: uppercase;
     font-size: 15px;
-    padding-top: 1%;
+    padding-top: 2%;
       a {
         display: inline-block;
         padding: 0 1rem;
@@ -151,27 +151,25 @@ footer {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    header .wrapper {
+        display: flex;
+        place-items: space-evenly;
+        flex-wrap: wrap;
+        nav {
+      
+        margin-left: -1rem;
+        font-size: 2.5rem;
+        padding-top: 10%;
+      
+      }
+    }
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+  
 
-  header .wrapper {
-    display: flex;
-    place-items: space-evenly;
-    flex-wrap: wrap;
-  }
+  
 
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+  
 }
 
 </style>

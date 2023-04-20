@@ -6,6 +6,9 @@ const getPortfolio = () => {
             id: 1,
             title: 'Flowershop Dögg',
             description: 'HTML - CSS - JS',
+            // when ready to deploy
+            //  image: '../assets/dogg.webp',
+            // and copy all of ../src/assets into ../dist/assets (after doing npm run build)
             image: '../../src/assets/dogg.webp',
             category: 'Web',
             color: '../../src/assets/dogg.png',
@@ -89,7 +92,8 @@ const getPortfolio = () => {
             linkname: 'WEBSITE',
             link: 'https://www.instagram.com/einkamal_/',
             category: 'Design',
-            detail: '...'
+            logo1: '../../src/assets/saralogo.png',
+            detail: 'I made this logo for a project that will be launched on 24th of April, until then I am not allowed to say much about it. The Client wanted a logo/art image that is representing secrets.'
         },
         {
             id: 6,

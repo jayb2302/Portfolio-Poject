@@ -40,14 +40,14 @@ onMounted(() => {
     let road = document.getElementById("road");
     let texthead = document.getElementById("text-head"); 
     let text = document.getElementById("text");    
-    console.log('elements', {
-      bg,
-      moon,
-      mountain,
-      road,
-      text,
-      texthead,
-    }) 
+    // console.log('elements', {
+    //   bg,
+    //   moon,
+    //   mountain,
+    //   road,
+    //   text,
+    //   texthead,
+    // }) 
 
   
     window.addEventListener('scroll', function(){

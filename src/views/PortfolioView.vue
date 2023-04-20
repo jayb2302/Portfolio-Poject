@@ -15,7 +15,7 @@
                         <h3>{{ item.title }}</h3>
                         </RouterLink>
                         <p class="description">{{ item.description }}</p>               
-                        <img :src="item.image" style="height: 135px; width: 305px;" alt="">
+                        <img :src="item.image" style="height: 195px; width: 375px;" alt="">
                        
                         <button class="btn" @click="toggleModal(item.id)" > More...</button>
                     </span>    
@@ -87,7 +87,7 @@
     }
     .card {
       width: auto;
-      height: 240px;
+      height: 305px;
       --border-radius: 15px;
       --border-width: 2px;
       appearance: none;
@@ -100,7 +100,7 @@
       color: #fff;
       z-index: 0;
       border-radius: 15px;
-      margin: 1%;
+      margin: 2% 0.5% 2.5% 0.5%;
       p{
         font-size: .8em;
       }

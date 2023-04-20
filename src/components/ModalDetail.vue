@@ -61,12 +61,7 @@ import { toRefs, computed, } from 'vue'
 
 
 
-//let clickedId = ref()
 
-// export default {
-//     name: 'ModalDetail',
-    
-// };
 
 </script>
 
