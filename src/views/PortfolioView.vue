@@ -28,15 +28,13 @@
 <script setup >
     import ModalDetail from'../components/ModalDetail.vue';
     import { ref } from 'vue'; 
-   
-
     import portfoliodb from '../modules/portfoliodb'
     // eslint-disable-next-line no-unused-vars
-    const { components } = {ModalDetail,}
-    const { state } = portfoliodb()
-     const showModal = ref(false)
-    
-     const id = ref()
+      const { components } = {ModalDetail,}
+      const { state } = portfoliodb()
+      const showModal = ref(false)
+      
+      const id = ref()
 
     defineProps({
       itemId: Number
@@ -47,7 +45,7 @@
         function toggleModal(itemId){
           id.value = itemId
           showModal.value = !showModal.value;
-          console.log( showModal.value )
+          // console.log( showModal.value )
          
         }
    

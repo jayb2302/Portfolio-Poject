@@ -11,7 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="wrapper">
 
       <nav>
-        <RouterLink class="effect-shine" to="/">Home</RouterLink>
+        <RouterLink class="transition ease-in duration-[2000ms]ease-in-out effect-shine" to="/">Home</RouterLink>
         <RouterLink class="effect-shine" to="/portfolio">Portfolio</RouterLink>
         <RouterLink class="effect-shine" to="/about">About</RouterLink>
         
@@ -151,23 +151,23 @@ footer {
   header {
     display: flex;
     place-items: center;
-    header .wrapper {
-        display: flex;
-        place-items: space-evenly;
-        flex-wrap: wrap;
-        nav {
-      
-        margin-left: -1rem;
-        font-size: 2.5rem;
-        padding-top: 10%;
-      
-      }
-    }
+   
+  .wrapper {
+    display: flex;
+    place-items: space-evenly;
+    flex-wrap: wrap;
+    
+    nav {
+    margin-left: 0rem;
+    font-size: 1.2rem;
+    padding-top: 5%;
+  
   }
+  }
+}
 
-  
 
-  
+
 
   
 }

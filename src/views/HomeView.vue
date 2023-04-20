@@ -1,22 +1,23 @@
 
 
-<template>
+<template class="">
 
-<div class="homepage">
-
-    <section class="homepage-section">
+<div class="homepage  ">
+<Transition class="transition ease-in-out duration-[2000ms]">
+    <section class="homepage-section ">
       <img :src="'../../src/assets/bg1.png'"  id="bg1" alt="">
       <div id="bg">
           <div id="stars"></div>
           <div id="stars2"></div>
           <div id="stars3"></div>
       </div>
-      <img :src="'../../src/assets/moon.png'" id="moon" alt="">
+      <img :src="'../../src/assets/moon.png'" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
       <img :src="'../../src/assets/mountain.png'" id="mountain" alt="">
       <img :src="'../../src/assets/road1.png'" id="road" alt="">
-      <h2 id="text-head"> Jónína Bjarnadóttir</h2>
+      <h2 id="text-head" class=""> Jónína Bjarnadóttir</h2>
       <h2 id="text"> Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp; &nbsp; Grapich Designer</h2>
     </section>
+</Transition>
     <section class="projects-section">
   
 
@@ -54,12 +55,12 @@ onMounted(() => {
       var value = window.scrollY; 
      
       
-      bg.style.top = value * 0.5 + 'px';
-      moon.style.left = -value * 0.5 + 'px';
-      mountain.style.top = -value * 0.25 + 'px';
-      road.style.top = value * 0.3 + 'px'; 
-      texthead.style.top = value * 1 + 'px';
-      text.style.top = value * 1 + 'px';
+      bg.style.top = -value * 0.2 + 'px';
+      moon.style.left = -value * 0.8 + 'px';
+      mountain.style.top = -value * 0.5 + 'px';
+      road.style.top = -value * 0.1 + 'px'; 
+      texthead.style.left = value * 0.8 + 'px';
+      text.style.top = value * 0.2 + 'px';
   
   }) 
 });
@@ -78,9 +79,9 @@ onMounted(() => {
   .homepage {
     padding: 0;
     font-family: republica;
-    font-size: 40px;
+    font-size: 35px;
     background-color: #03092de3;
-    min-height: 1500px;
+    min-height: 1200px;
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
     width: 100%;
     
@@ -97,7 +98,7 @@ onMounted(() => {
       left: 0;
       right: 0;
       padding-left: 0;
-      padding-top: 4%;
+      padding-top: 10%;
 
         #text-head {
           position: relative;
@@ -105,17 +106,16 @@ onMounted(() => {
           font-size: 1em;
           z-index: 1;
           text-shadow: 3px 2px 2px #3b3535;
-          width: 100%;
+     
           
         }
         #text{
           position: relative;
           color: #fff;
-          font-size: .5em;
+          font-size: .6em;
           z-index: 1;
           text-shadow: 3px 2px 2px #3b3535, 0px -2px 1px #3b3535b6;
-          
-          width: 100%;
+        
           text-transform: uppercase;
           
         }
@@ -136,7 +136,6 @@ onMounted(() => {
           }
         }
  
-  
         #stars2 {
           width: 2px;
           height: 2px;
@@ -154,7 +153,6 @@ onMounted(() => {
           }
         }
  
-  
         #stars3 {
           width: 2px;
           height: 2px;
@@ -178,7 +176,7 @@ onMounted(() => {
           to {
             transform: translateY(-2000px);
         }
-  }
+        }
  
   
     
@@ -210,21 +208,23 @@ onMounted(() => {
         height: 100%;
         object-fit: cover;
         pointer-events: none;
-        
       }
-     
-
       #moon{
         filter: drop-shadow(1px 1px 8px #4444dd);
+        margin-top: -1%;
       }
       #road {
         margin-top: 10%;
         z-index: 2;
         -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-      mask-image: linear-gradient( bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+        mask-image: linear-gradient( bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+      }
+      #mountain {
+        margin-top: -4%;
       }
       #bg{
         filter: opacity(0.8);
+        margin-top: -3%;
       }
     }
     
@@ -233,11 +233,6 @@ onMounted(() => {
    
   }
  
-  
-  
-  
-  
-
   
  
 </style>

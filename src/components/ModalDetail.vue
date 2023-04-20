@@ -1,41 +1,49 @@
 <template>
     <teleport to="body">
-        <div class="modal-backdrop fixed bg-black w-full h-full bg-opacity-80 z-10 inset-0 " >
-            <div class="flex justify-center pt-12 ">
-                <div class="modal bg-slate-800  shadow-md shadow-slate-500 shadow-inner w-96 p-7 h-1/2 rounded-lg " role="dialog" ref="modal">
-                    <button class="absolute right-3 top-2 z-20" @click="$emit('close')"><font-awesome-icon style="color: aliceblue;" id="closebutton" :icon="['fas', 'x']" /></button>
-                  
-                   <!-- <div class="portfolio-container overflow-hidden hover:overflow-auto scrollbar-thin scrollbar-thumb-cyan-700 scrollbar-track-sky-200  "> -->
-
-                     <div class="portfolio-container overflow-hidden hover:overflow-auto scrollbar ">
-
-                        <div class="portfolio-item flex flex-col h-96" v-if="portfolioDetails" >            
-                            
-                            <p class="category " :class="portfolioDetails.category">{{ portfolioDetails.category}}</p>
-                            
-                            <h3>{{ portfolioDetails.title }}</h3>
+        <transition enter-active-class="transition ease-in-out duration-900" enter-from-class="opacity-0" enter-to-class="opacity-100"
+                    leave-active-class="transition ease-in duration-900 transform" leave-from-class="opacity-100" leave-to-class="opacity-0">
+            <div class="modal-backdrop fixed bg-black w-full h-full bg-opacity-80 z-10 inset-0 " >
+                <transition enter-active-class="transition ease-in-out duration-900 transform " enter-from-class="opacity-0 translate-y-10 scale-95" enter-to-class="opacity-100 translate-y-0 scale-100"
+                                leave-active-class="ease-in duration-900" leave-from-class="opacity-100 translate-y-0 scale-100" leave-to-class="opacity-0 translate-y-10 translate-y-0 scale-95">
+                    <div class="flex justify-center pt-12 ">
+                        <div class=" modal bg-slate-800  shadow-md shadow-slate-500 shadow-inner w-96 pt-7 pl-7 pr-5 h-1/2 rounded-lg " role="dialog" ref="modal">
+                            <button class=" absolute right-3 top-2 z-20" @click="$emit('close')"><font-awesome-icon style="color: aliceblue;" id="closebutton" :icon="['fas', 'x']" /></button>
                         
-                            <h2 class="flex justify-center border border-slate-600 pt-1 bg-cyan-800/70 pl-0 w-44 rounded-lg">{{ portfolioDetails.description }}</h2>               
-                            <img id="outlineimg" class="outline-none p-0.5 mt-2 rounded-lg shadow-lg" :src="portfolioDetails.image" alt="">
-                            <h4 class="pt-2 text-xs ">ABOUT :</h4>
-                            <p>{{ portfolioDetails.detail }}</p>
-                          
-                            <a class="flex justify-end " target="_blank"  :href="portfolioDetails.link" >{{portfolioDetails.linkname}}</a>
-                            <img class="h-16 w-32" :src="portfolioDetails.logo" alt="">
-                            <img class="h-26 w-32 pt-4" :src="portfolioDetails.logo1" alt="">
-                            <h4 class="pt-2 pb-3 text-xs ">{{ portfolioDetails.h4 }}</h4>
-                            <img class="h-18 w-36" :src="portfolioDetails.color" alt="">
-                            <h4 class="pt-3 pb-2 text-xs ">{{ portfolioDetails.heading }}</h4>
-                            <img class="place-self-center w-1/2 pt-2" :src="portfolioDetails.webp" alt="">
+                            <div class="portfolio-container overflow-auto hover:overflow-auto scrollbar ">
 
-                            
+                                <div class="portfolio-item flex flex-col h-96" v-if="portfolioDetails" >            
+                                    
+                                    <p class="category " :class="portfolioDetails.category">{{ portfolioDetails.category}}</p>
+                                    
+                                    <h3>{{ portfolioDetails.title }}</h3>
+                                
+                                    <h2 class="flex justify-center border border-slate-600 pt-1 bg-cyan-800/70 pl-0 w-44 rounded-lg">{{ portfolioDetails.description }}</h2>               
+                                    <img id="outlineimg" class="outline-none p-0.5 mt-2 rounded-lg shadow-lg" :src="portfolioDetails.image" alt="">
+                                    <h4 class="pt-2 text-xs ">ABOUT :</h4>
+                                    <p>{{ portfolioDetails.detail }}</p>
+                                
+                                    <a class="flex justify-end " target="_blank"  :href="portfolioDetails.link" >{{portfolioDetails.linkname}}</a>
+                                    <img class="h-16 w-32" :src="portfolioDetails.logo" alt="">
+                                    <img class="h-26 w-32 pt-4" :src="portfolioDetails.logo1" alt="">
+                                    <h4 class="pt-2 pb-3 text-xs ">{{ portfolioDetails.h4 }}</h4>
+                                    <img class="h-18 w-36" :src="portfolioDetails.color" alt="">
+                                    <h4 class="pt-3 pb-2 text-xs ">{{ portfolioDetails.heading }}</h4>
+                                    <img class="place-self-center w-1/2 pt-2" :src="portfolioDetails.webp" alt="">
+
+
+                                </div>
+            
+                                
+                            </div>
+                                <div class=" opacity-10  flex justify-end top-34 mb-2 pt-2 pr-1 animate-bounce">
+                                        <font-awesome-icon class=" icon w-10 h-5" style="color: aliceblue;" id="closebutton" :icon="['fas', 'angles-down']" />
+                                </div>
                         </div>
-       
-             
-                     </div>
-                </div>
+                
+                    </div> 
+                </transition>
             </div>
-        </div>
+        </transition>
     </teleport>    
 </template>
 
@@ -58,8 +66,6 @@ import { toRefs, computed, } from 'vue'
     const portfolioDetails = computed( () => {
         return state.value.find(item => item.id == id.value)
     })
-
-
 
 
 
