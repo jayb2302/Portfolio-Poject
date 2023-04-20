@@ -81,14 +81,15 @@ const getPortfolio = () => {
             detail: 'NOROM is an online clothing store operating in Miami, USA. Its focus is to provide people opportunities. I have done some fashion photography for the online store. Those projects have been both in Miami and in Iceland. '
         },
         {
-            id: 6,
-            title: 'Kölski',
-            description: 'PREMIERE PRO',
-            image: '../../src/assets/kolski.webp',
+            id: 8,
+            title: 'EINKAMÁL',
+            description: 'DESIGN - LOGO',
+            // eslint-disable-next-line no-undef
+            image: '../../src/assets/sarasex.png',
             linkname: 'WEBSITE',
-            link: 'https://www.kolski.is/',
-            category: 'Video',
-            detail: 'Kölski is a suit company in Iceland that specializes in classy and stylish suits. They had a gentlemens night and asked me to record it and edit a video for future advertising. '
+            link: 'https://www.instagram.com/einkamal_/',
+            category: 'Design',
+            detail: '...'
         },
         {
             id: 6,

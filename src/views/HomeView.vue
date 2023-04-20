@@ -5,7 +5,7 @@
 <div class="homepage">
 
     <section class="homepage-section">
-      <img :src="'../../src/assets/bg1.jpeg'"  id="bg1" alt="">
+      <img :src="'../../src/assets/bg1.png'"  id="bg1" alt="">
       <div id="bg">
           <div id="stars"></div>
           <div id="stars2"></div>

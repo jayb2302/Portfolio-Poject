@@ -1,7 +1,7 @@
 <template>
     <teleport to="body">
         <div class="modal-backdrop fixed bg-black w-full h-full bg-opacity-80 z-10 inset-0 " >
-            <div class="flex justify-center pt-20 ">
+            <div class="flex justify-center pt-12 ">
                 <div class="modal bg-slate-800  shadow-md shadow-slate-500 shadow-inner w-96 p-7 h-1/2 rounded-lg " role="dialog" ref="modal">
                     <button class="absolute right-3 top-2 z-20" @click="$emit('close')"><font-awesome-icon style="color: aliceblue;" id="closebutton" :icon="['fas', 'x']" /></button>
                   
