@@ -76,11 +76,11 @@ import { toRefs, computed} from 'vue'
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../../dist/assets/republica-a77296c8.otf);
+    src: url(../assets/republica-a77296c8.otf);
   }
   @font-face {
     font-family: lettergothic;
-    src: url(../../dist/assets/lettergothic.otf);
+    src: url(../assets/lettergothic.otf);
   }
   
 .modal {
