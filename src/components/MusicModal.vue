@@ -3,33 +3,24 @@
        
         <transition enter-active-class="transition ease-in duration-100 transform" enter-from-class="opacity-0" enter-to-class="opacity-100"
                     leave-active-class="transition ease-out duration-100 transform" leave-from-class="opacity-100" leave-to-class="opacity-0">
-            <div ref="modal-backdrop" @click="closeModal" v-show="showModal" class="modal-backdrop fixed bg-black w-full h-full bg-opacity-10 z-10 inset-0 " >
-                     <div class="flex justify-center overflow-hidden hover:overflow-auto scrollbar h-full pt-14 mt-4 ">
+            <div ref="modal-backdrop" @click="closeModal" v-show="showModalmusic" class="modal-backdrop fixed bg-black w-full h-full bg-opacity-10 pr-4 z-10 inset-0 " >
+                     <div class="flex justify-center overflow-hidden hover:overflow-auto scrollbar h-full pt-14 mt-4 pr-0 ">
                         <transition enter-active-class="transition ease-out duration-800 transform " enter-from-class="opacity-0 translate-y-10 scale-95" enter-to-class="opacity-100 translate-y-0 scale-100"
                             leave-active-class="ease-in duration-800" leave-from-class="opacity-100 translate-y-0 scale-100" leave-to-class="opacity-0 translate-y-10 translate-y-0 scale-95">
-                            <div class="modal bg-slate-800 overflow-auto hover:overflow-auto scrollbar scrollbar-thin  shadow-md shadow-slate-500 shadow-inner w-9/12 pt-4 h-5/6 mb-2 rounded " role="dialog" ref="modal">
+                            <div class="modal bg-slate-800 overflow-auto hover:overflow-auto scrollbar scrollbar-thin  shadow-md shadow-slate-500 shadow-inner w-9/12 pt-4 h-5/6  rounded " role="dialog" ref="modal">
                                 <button class="btn absolute right-3 rounded-xl pt-0.5 pb-0.5 pl-2 pr-2 top-3 z-20" @click="closeModal">CLOSE<font-awesome-icon class="pl-2 icon" style="color: aliceblue;" id="closebutton" :icon="['fas', 'x']" /></button>
-                                <div class="aboutme flex flex-row h-40 w-full -pt-1 ">
-                                    <div class="w-4/6 mb-3"> 
-                                    <h1 class="ml-8 mb-2 ">My Story</h1>
-                                        <p class="w-5/6 h-auto text-justify ml-7 mr-10 pr-2 mb-5 pl-3 pb-5 pt-5 leading-5" > I was born in a small town in the east of Iceland.
-                                        I crew up in Eskifjörður and then later moved to Reykjavík. <br> <br> In Reykjavík I took different classes trying to learn 
-                                        as much as possible. I also became the student president before graduating in Art and Clothing technology. 
-                                        After that I moved to Spain to study the language, people and cilture while attending bartending school
-                                        Following my thirst to learn new things I returned to Iceland trying to become a pilot but I found 
-                                        my first passion in film and photography. <br> <br> Then I moved to Miami to work as a photographer and video editor. 
-                                        Following that I worked at a ski resort before meeting my husband Jón and soon our beautiful Irena arrived. 
-                                        Together we moved to Esbjerg where I continue to learn, now to become a successful web developer and multimedia designer.</p>
+                                <div class="aboutme flex flex-col h-full w-full  ">
+                                    <div class=" p-7 align-center w-full "> 
+                                    <h1 class="ml-2 pb-5 ">My Favorite Music</h1>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5BFn9SJLDEju0jZSdrD2zD?utm_source=generator&theme=0" width="100%" height="390" frameBorder="0" allowfullscreen="" class="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                                     </div>
-                                    <div class="flex flex-col w-3/6 gap-6  -ml-4 pr-12 pt-10  ">
-                                    <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="../../src/assets/sheep.png" alt="">
-                                    <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="../../src/assets/reykjavik.png" alt="">
-                                    <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="../../src/assets/eskifjordur.jpeg" alt="">
-
-                                    </div>
+                                
                                 </div>
                                 <div class=" opacity-10  flex justify-end top-48 ">
-                                <font-awesome-icon class="animate-bounce icon w-10 h-5" style="color: aliceblue;" id="closebutton" :icon="['fas', 'angles-down']" />
+                                    <font-awesome-icon class="animate-bounce fixed icon w-10 h-5 pb-28 opacity-20 pr-1" style="color: aliceblue;" id="closebutton" :icon="['fas', 'music']" />
+                                    <font-awesome-icon class="animate-bounce fixed icon w-10 h-5 pb-16 opacity-60 pr-1" style="color: aliceblue;" id="closebutton" :icon="['fas', 'music']" />
+                                    <font-awesome-icon class="animate-bounce fixed icon w-10 h-5 pr-1" style="color: aliceblue;" id="closebutton" :icon="['fas', 'music']" />
+
                                 </div>
                             </div>
                         </transition>
@@ -49,24 +40,24 @@ const props = {
   },
 };
 export default {
-  name: 'ModalDialog',
+  name: 'MusicDialog',
   props,
   setup(props) {
-  const showModal = ref(false);
+  const showModalmusic = ref(false);
   
   function closeModal() {
-        showModal.value = false;
+        showModalmusic.value = false;
       }
 
       watch(
         () => props.show,
         (show) => {
-          showModal.value = show;
+          showModalmusic.value = show;
         }
       );
 
   return {
-    showModal, closeModal,
+    showModalmusic, closeModal,
   };
 },
 };
@@ -91,18 +82,14 @@ export default {
         color: #e3e9f0;
 
         h1{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-family: republica;
         }
      
         p{
             background-color: rgba(17, 29, 50, 0.424);
             box-shadow: 0.5px 1px 3px #515253 ;
-            font-size: 1.2rem;
-        }
-        img{
-          box-shadow: 1px -4px 5px #1111128a;
-          opacity: 0.9;
+            font-size: .8rem;
         }
     .btn{
         font-family: republica;

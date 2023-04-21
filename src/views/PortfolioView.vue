@@ -63,7 +63,7 @@
     position: relative;
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
     height: auto;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 
     .content {
       z-index: 3;
@@ -77,15 +77,16 @@
       text-align: center;
       text-transform: uppercase;
       padding-bottom: 1%;
+      font-size: 1.2rem;
     }
     .description{
-      font-size: 12px;
+      font-size: 18px;
       padding-top: 2%;
       
     }
     .card {
       width: auto;
-      height: 305px;
+      height: 325px;
       --border-radius: 15px;
       --border-width: 2px;
       appearance: none;
@@ -93,12 +94,12 @@
       padding: 1em 1em 1em 1em;
       border: 0;
       background: rgb(37, 37, 42);
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 500;
       color: #fff;
       z-index: 0;
       border-radius: 15px;
-      margin: 2% 0.5% 2.5% 0.5%;
+      margin: 2% 0.5% 0.5% 0.5%;
       p{
         font-size: .8em;
       }

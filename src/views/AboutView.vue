@@ -1,30 +1,33 @@
-<template class="w-full">
-  <main class="aboutme-section flex justify-center align-top  relative pt-2 h-full w-full">
+<template class="w-full ">
+  <main class="aboutme-section flex justify-center align-center relative pt-3 h-screen w-full">
     
-    <div class="flex flex-col justify-center relative fixed about h-full   w-full">
-      <h1 class="relative pt-8 opacity-10 static w-full p-15 pb-36 h-full pl-10 pr-10 text-sky-300 ">About Me...</h1>
-      <div class=" flex flex-col mystory absolute align-top w-4/6 h-3/5 border-l-3 border-shawow opacity-2 place-self-center mt-5">
-        <button type="button" @click="showModal = !showModal" class=" transition ease-in-out duration-1000 w-30 hover:text-gray-50  ">
+    <div class="flex flex-col justify-center align-top relative fixed about h-full   w-full">
+      <h1 class="relative pt-10 opacity-10 static w-full p-15 pb-36 h-full pl-10 pr-10 text-sky-300 ">About Me...</h1>
+      <div class=" flex flex-col mystory absolute align-center w-4/6 h-3/6 border-l-3 border-shawow opacity-2 place-self-center ">
+        <button type="button" @click="showModal = !showModal" class=" transition ease-in-out duration-1000 z-10 w-30 hover:text-gray-50  ">
           <div class="relative w-96 -ml-3 pt-6 h-auto">
             <div class="flex outsidearrow w-6/12 h-14"><h2 class="arrow  w-full text-start pl-6 h-11 pt-2  ">My Story</h2></div>
           </div>           
         </button>
-        <button type="button" @click="showModal = !showModal" class="transition ease-in-out duration-1000 w-30 hover:text-gray-50  ">
+        <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10 w-30 hover:text-gray-50  ">
           <div class="relative w-96 -ml-3 pt-6 h-auto ">
             <div class="flex outsidearrow w-8/12 h-14"><h2 class="arrow  w-96 text-start pl-6 h-11 pt-2  ">Interests & Hobby</h2></div>
           </div>           
         </button>
-        <button type="button" @click="showModal = !showModal" class="transition ease-in-out duration-1000  w-30 hover:text-gray-50  ">
+        <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10 w-30 hover:text-gray-50  ">
           <div class="relative w-96 -ml-3 pt-6 h-auto">
             <div class="flex outsidearrow w-7/12 h-14"><h2 class="arrow  w-full text-start pl-6 h-11 pt-2  ">Music & Fun</h2></div>
           </div>           
         </button>
 
-        <div class="flex absolute justify-end -z-10 pr-10 pt-14 absolute w-full h-2/3">
-          <div class="imgbg w-60 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
-            <img class=" w-60 p-0.5 " src="../../src/assets/aboutmeprofile.png" alt="">
+        <div class="flex absolute justify-end  pr-10 pt-14 absolute w-full h-2/3">
+          <div class="imgbg w-60 z-10 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
+            <img class=" w-60 p-0.5  " src="../../src/assets/aboutmeprofile.png" alt="">
           </div>
           <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
+          <MusicDialog class="transition ease-in-out duration-1000" :show="showModalmusic" /> 
+          <HobbyDialog class="transition ease-in-out duration-1000" :show="showModalhobby" /> 
+
         </div> 
       </div>       
      
@@ -36,32 +39,28 @@
 <script >
 import { ref } from 'vue';
 import ModalDialog from'../components/AboutModal.vue';
-import useClickOutside from '../../src/composables/useClickOutside';
+import MusicDialog from'../components/MusicModal.vue';
+import HobbyDialog from'../components/HobbyModal.vue';
   
 const components = {
-  ModalDialog,
+  MusicDialog, ModalDialog, HobbyDialog,
 }; 
 
 export default {
   name: 'AboutModal',
+  nameone: 'MusicModal',
+  nametwo: 'HobbyModal',
   components,
   setup() {
 
 const modal = ref(null);
-const { onClickOutside } = useClickOutside();
 const showModal = ref(false);
-
-
-onClickOutside(modal, () => {
-    if (showModal.value === true) {
-    // eslint-disable-next-line no-undef
-    closeModal();
-    }
-});
+const showModalmusic = ref(false);
+const showModalhobby = ref(false);
 
 return {
     ...
-    modal,showModal,
+    modal,showModal, showModalmusic, showModalhobby
 };
 }
 
@@ -74,8 +73,9 @@ return {
     main{
         display: flex;
         width: 100%;
+        height: 100%;
         position: relative;
-        background: radial-gradient(ellipse at top, #1b2735 0%, rgba(86, 98, 97, 0.686)#090a0f 100%);
+        background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
         h1 {
           font-size:245px;
           text-align: start;
