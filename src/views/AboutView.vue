@@ -3,14 +3,14 @@
     
     <div class="flex flex-col justify-center align-top relative fixed about h-full   w-full">
       <h1 class="relative pt-10 opacity-10 static w-full p-15 pb-36 h-full pl-10 pr-10 text-sky-300 ">About Me...</h1>
-      <div class=" flex flex-col mystory absolute align-center w-8/12 h-4/6 border-l-3 border-shawow opacity-2 place-self-center ">
-        <div class="w-1/2">
+      <div class=" flex flex-col md:flex-row mystory absolute align-center w-8/12 h-4/6 border-l-3 border-shawow opacity-2 place-self-center ">
+        <div class="w-2/4 pt-56 md:-pt-10">
         <button type="button" @click="showModal = !showModal" class=" transition ease-in-out duration-1000 z-10 w-full h-30 hover:text-gray-50  ">
           <div class="relative w-2/3 -ml-3 pt-6 h-2/4">
             <div class="flex outsidearrow w-9/12 h-36"><h2 class="arrow  w-full text-start pl-6 h-30 pt-2  ">Story</h2></div>
           </div>           
         </button>
-        <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10 w-30 hover:text-gray-50  ">
+        <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
           <div class="relative w-96 -ml-3 pt-6 h-2/4 ">
             <div class="flex outsidearrow w-11/12 h-20"><h2 class="arrow  w-full text-start pl-6 h-11 pt-2  ">Hobbies</h2></div>
           </div>           
@@ -24,7 +24,7 @@
         <div class="w-full flex absolute justify-center">
 
           <div class="flex absolute justify-end pr-16  pt-12 absolute w-full h-1/2">
-            <div class="imgbg w-78 z-10 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
+            <div class="imgbg w-78 z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
               <img class=" w-full h-100 p-0.5 "  src="../../src/assets/aboutmehero.png" alt="">
             </div>
             <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
