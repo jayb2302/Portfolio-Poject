@@ -33,7 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../assets/republica-a77296c8.otf);
+    src: url(../assets/republica.otf);
   }
 header {
   display: flex;

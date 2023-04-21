@@ -22,9 +22,9 @@
                                         Together we moved to Esbjerg where I continue to learn, now to become a successful web developer and multimedia designer.</p>
                                     </div>
                                     <div class="flex flex-col w-3/6 gap-6  -ml-4 pr-12 pt-10  ">
-                                    <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="./assets/sheep-a9098e94.png" alt="">
-                                    <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="./assets/reykjavik-0c35ae42.png" alt="">
-                                    <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="./assets/eskifjordur-73993f27.jpeg" alt="">
+                                    <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="../assets/sheep.png" alt="">
+                                    <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="../assets/reykjavik.png" alt="">
+                                    <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="../assets/eskifjordur.jpeg" alt="">
 
                                     </div>
                                 </div>

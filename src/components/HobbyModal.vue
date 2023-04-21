@@ -14,27 +14,27 @@
                                         <h1 class="ml-8  pb-2 ">Hobby & Interests</h1>
                                         <div class="imgbg flex gap-11 justify-center mt-1 flex-row flex-wrap h-full w-full p-1">
                                             <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/travel-e07cd15c.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/travel.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Traveling</h2>
                                             </div>   
                                             <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/cooking-1adfe296.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/cooking.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Cooking</h2>
                                             </div>  
                                             <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/music-7c5299bc.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div> 
                                             <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/football-3ad95c61.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/football.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Football</h2>
                                             </div>  
                                             <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/music-7c5299bc.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div>  
                                             <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/music-7c5299bc.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div>                                            
                                         </div>
@@ -93,7 +93,7 @@ export default {
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../assets/republica-a77296c8.otf);
+    src: url(../assets/republica.otf);
   }
   @font-face {
     font-family: lettergothic;
