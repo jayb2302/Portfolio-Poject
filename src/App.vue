@@ -20,7 +20,7 @@ import { RouterLink, RouterView } from 'vue-router'
     
   </header>
 
-  <footer>
+  <footer class="w-full h-16">
     <a  href="https://www.linkedin.com/in/joninaa" target="_blank" rel="noopener noreferrer"><font-awesome-icon class="icon" :icon="['fab', 'linkedin-in']"/></a>
     <a  href="https://www.instagram.com/jaydiamondphotos/" target="_blank" rel="noopener noreferrer"><font-awesome-icon class="icon" :icon="['fab', 'instagram']"/></a>
     <a  href="https://www.facebook.com/joninaab/" target="_blank" rel="noopener noreferrer"><font-awesome-icon class="icon" :icon="['fab', 'facebook-f']"/></a>
@@ -106,8 +106,8 @@ footer {
     display: flex;
     top: 0;
     left: 0;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -138,38 +138,68 @@ footer {
         
       }
       .icon{
-        height: 21px;
-        width: 21px;
+        height: 31px;
+        width: 31px;
       }
 
     
   }
   
 }
-
-@media (min-width: 1240px) {
+@media (max-width: 800px){
   header {
     display: flex;
-    place-items: center;
+   
    
   .wrapper {
-    display: flex;
-    place-items: space-evenly;
-    flex-wrap: wrap;
+  
+    place-items: space-between;
+    
     
     nav {
+    display: flex;
+    align-items: start;
     margin-left: 0rem;
-    font-size: 1.2rem;
-    padding-top: 5%;
+    font-size: 2rem;
+    padding-top: 1.8rem;
+    padding-left: 1.2rem;
+    flex-direction: column;
+   
+    a{
+      border-left: 0px solid rgba(137, 175, 236, 0.5);
+
+    }
   
   }
   }
 }
+}
+// @media (max-width: 1240px) {
+//   header {
+//     display: flex;
+//     place-items: center;
+   
+//   .wrapper {
+//     display: inline;
+    
+//     place-items: space-evenly;
+//     flex-wrap: wrap;
+    
+//     nav {
+//     margin-left: 0rem;
+//     font-size: 1.5rem;
+//     padding-top: 12%;
+//     flex-direction: column;
+  
+//   }
+//   }
+// }
 
 
 
 
   
-}
+// }
+
 
 </style>
