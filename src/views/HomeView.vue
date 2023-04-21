@@ -16,17 +16,7 @@
           <img :src="'../assets/road1.png'" id="road" alt="">
           <h2 id="text-head" class=""> Jónína Bjarnadóttir</h2>
           <h2 id="text"> Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp;  &nbsp; Grapich Designer</h2>
-        </div>
-
-
-      
-      
-      <section class="projects-section">
-      <iframe width="1497" height="664" src="https://www.youtube.com/embed/kiIBn49zY7I" title="INT -Jonina Bjarnadottir - VideoCV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-
-    </section>
+        </div> 
   </div>
   </Transition>
 </template>
