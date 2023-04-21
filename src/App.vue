@@ -33,11 +33,11 @@ import { RouterLink, RouterView } from 'vue-router'
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../assets/republica-a77296c8.otf);
+    src: url(../../src/assets/republica.otf);
   }
 header {
   display: flex;
-  background-image: url(../assets/bg1-b60daf09.png);
+  background-image: url(../../src/assets/bg1.png);
   background-size: cover;
   background-blend-mode: screen;
   background-color: transparent;

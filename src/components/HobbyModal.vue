@@ -13,40 +13,34 @@
                                     <div class="w-full pb-5"> 
                                         <h1 class="ml-8  pb-2 ">Hobby & Interests</h1>
                                         <div class="imgbg flex gap-11 justify-center mt-1 flex-row flex-wrap h-full w-full p-1">
-                                            <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/travel-e07cd15c.png" alt="">
+                                            <div class=" imgborder flex w-78 h-60">
+                                                <img class="w-full p-0.5  " src="../../src/assets/travel.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Traveling</h2>
                                             </div>   
-                                            <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/cooking-1adfe296.png" alt="">
+                                            <div class=" imgborder flex w-78 h-60">
+                                                <img class="w-full p-0.5  " src="../../src/assets/cooking.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Cooking</h2>
                                             </div>  
-                                            <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/music-7c5299bc.png" alt="">
+                                            <div class=" imgborder flex w-78 h-60">
+                                                <img class="w-full p-0.5  " src="../../src/assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div> 
-                                            <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/football-3ad95c61.png" alt="">
+                                            <div class=" imgborder flex w-78 h-60">
+                                                <img class="w-full p-0.5  " src="../../src/assets/football.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Football</h2>
                                             </div>  
-                                            <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/music-7c5299bc.png" alt="">
+                                            <div class=" imgborder flex w-78 h-60">
+                                                <img class="w-full p-0.5  " src="../../src/assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div>  
-                                            <div class=" imgborder flex w-72 h-60">
-                                                <img class="w-full p-0.5  " src="../../dist/assets/music-7c5299bc.png" alt="">
+                                            <div class=" imgborder flex w-78 h-60">
+                                                <img class="w-full p-0.5  " src="../../src/assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div>                                            
                                         </div>
                                     </div>
+                                </div>
                                 
-                                </div>
-                                <div class=" opacity-10  flex justify-end top-48 ">
-                                    <font-awesome-icon class="animate-bounce fixed icon w-10 h-5 pb-28 opacity-20 pr-1" style="color: aliceblue;" id="closebutton" :icon="['fas', 'music']" />
-                                    <font-awesome-icon class="animate-bounce fixed icon w-10 h-5 pb-16 opacity-60 pr-1" style="color: aliceblue;" id="closebutton" :icon="['fas', 'music']" />
-                                    <font-awesome-icon class="animate-bounce fixed icon w-10 h-5 pr-1" style="color: aliceblue;" id="closebutton" :icon="['fas', 'music']" />
-
-                                </div>
                             </div>
                         </transition>
                      </div>
@@ -93,7 +87,7 @@ export default {
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../assets/republica-a77296c8.otf);
+    src: url(../assets/republica.otf);
   }
   @font-face {
     font-family: lettergothic;
@@ -119,6 +113,7 @@ export default {
             font-size: .8rem;
         }
         .imgbg{
+            padding: 2%;
           .imgborder{
             background-image: linear-gradient( 217deg, rgba(106, 33, 81, 0.315), rgba(88, 36, 111, 0.38) 70.71%), 
                             linear-gradient( 127deg, rgba(102, 56, 166, 0.305), rgba(5, 242, 218, 0.445) 70.71%),
@@ -132,6 +127,7 @@ export default {
             img{
                 box-shadow: inset 2.2px 1.5px 3px rgba(148, 124, 124, 0.901);
                 opacity: 0.7;
+                width: 24em;
 
             }
             

@@ -25,7 +25,7 @@
 
           <div class="flex absolute justify-end pr-16  pt-12 absolute w-full h-1/2">
             <div class="imgbg w-78 z-10 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
-              <img class=" w-full h-100 p-0.5 "  src="../assets/aboutmehero.png" alt="">
+              <img class=" w-full h-100 p-0.5 "  src="../../src/assets/aboutmehero.png" alt="">
             </div>
             <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
             <MusicDialog class="transition ease-in-out duration-1000" :show="showModalmusic" /> 

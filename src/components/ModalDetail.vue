@@ -49,7 +49,7 @@
 
 <script setup >
 
-import portfoliodb from '../modules/portfoliodb'
+import portfoliodb from '../../src/modules/portfoliodb'
 
 import { toRefs, computed} from 'vue'
 
@@ -76,11 +76,11 @@ import { toRefs, computed} from 'vue'
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../assets/republica-a77296c8.otf);
+    src: url(../../src/assets/republica.otf);
   }
   @font-face {
     font-family: lettergothic;
-    src: url(../assets/lettergothic.otf);
+    src: url(../../src/assets/lettergothic.otf);
   }
   
 .modal {

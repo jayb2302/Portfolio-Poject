@@ -12,7 +12,7 @@
                                 <div class="aboutme flex flex-row h-40 w-full -pt-1 ">
                                     <div class="w-4/6 mb-3"> 
                                     <h1 class="ml-8 mb-2 ">My Story</h1>
-                                        <p class="w-5/6 h-auto text-justify ml-7 mr-10 pr-2 mb-5 pl-3 pb-5 pt-5 leading-5" > I was born in a small town in the east of Iceland.
+                                        <p class="w-5/6 h-auto text-start ml-7 mr-10 pr-2 mb-5 pl-5 pb-5 pt-5 leading-6" > I was born in a small town in the east of Iceland.
                                         I crew up in Eskifjörður and then later moved to Reykjavík. <br> <br> In Reykjavík I took different classes trying to learn 
                                         as much as possible. I also became the student president before graduating in Art and Clothing technology. 
                                         After that I moved to Spain to study the language, people and cilture while attending bartending school
@@ -21,16 +21,14 @@
                                         Following that I worked at a ski resort before meeting my husband Jón and soon our beautiful Irena arrived. 
                                         Together we moved to Esbjerg where I continue to learn, now to become a successful web developer and multimedia designer.</p>
                                     </div>
-                                    <div class="flex flex-col w-3/6 gap-6  -ml-4 pr-12 pt-10  ">
-                                    <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="./assets/sheep-a9098e94.png" alt="">
-                                    <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="./assets/reykjavik-0c35ae42.png" alt="">
-                                    <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="./assets/eskifjordur-73993f27.jpeg" alt="">
+                                    <div class="flex flex-col w-3/6 gap-6  -ml-4 pr-12 pt-20  ">
+                                    <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="../../src/assets/sheep.png" alt="">
+                                    <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="../../src/assets/reykjavik.png" alt="">
+                                    <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="../../src/assets/eskifjordur.jpeg" alt="">
 
                                     </div>
                                 </div>
-                                <div class=" opacity-10  flex justify-end top-48 ">
-                                <font-awesome-icon class="animate-bounce icon w-10 h-5" style="color: aliceblue;" id="closebutton" :icon="['fas', 'angles-down']" />
-                                </div>
+                               
                             </div>
                         </transition>
                      </div>
@@ -91,14 +89,14 @@ export default {
         color: #e3e9f0;
 
         h1{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-family: republica;
         }
      
         p{
             background-color: rgba(17, 29, 50, 0.424);
             box-shadow: 0.5px 1px 3px #515253 ;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         img{
           box-shadow: 1px -4px 5px #1111128a;

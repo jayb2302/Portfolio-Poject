@@ -2,21 +2,30 @@
 
 <template class="">
   <Transition class="transition ease-in-out duration-[2000ms]">
-   <div class="homepage">
-      <div class="homepage-section">
+   <div class="homepage w-full">
+      <section class="homepage-section flex  w-full">
       
-          <img src="../assets/bg1.png"  id="bg1" alt="">
+          <img src="../../src/assets/bg1.png"  id="bg1" alt="">
           <div id="bg w-full">
               <div id="stars"></div>
               <div id="stars2"></div>
               <div id="stars3"></div>
           </div>
           <img :src="'../../src/assets/moon.png'" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
-          <img :src="'../assets/mountain.png'" id="mountain" alt="">
-          <img :src="'../assets/road1.png'" id="road" alt="">
+          <img :src="'../../src/assets/mountain.png'" id="mountain" alt="">
+          <img :src="'../../src/assets/road1.png'" id="road" alt="">
           <h2 id="text-head" class=""> Jónína Bjarnadóttir</h2>
           <h2 id="text"> Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp;  &nbsp; Grapich Designer</h2>
-        </div> 
+      </section>
+      <div class="w-full flex justify-center bottom-28">
+          <button class="btn  flex absolute rounded-xl flex justify-center z-50 w-72 h-26 " @click="closeModal"> <h4 class="">VideoCV</h4><font-awesome-icon class="pl-4 pt-2 icon" style="color: aliceblue;" id="closebutton" :icon="['fas', 'circle-play']" /></button>
+      </div>
+      <section class="video-section w-full">
+        <div class="flex justify-center w-full pt-36">
+          <iframe class="w-3/4 " height="315" src="https://www.youtube.com/embed/kiIBn49zY7I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </section> 
+      
   </div>
   </Transition>
 </template>
@@ -24,7 +33,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
-// import homestuffdb from '../modules/homestuffdb'
+// import homestuffdb from '../../src/modules/homestuffdb'
 
 // const { state } = homestuffdb()
 
@@ -69,7 +78,7 @@ onMounted(() => {
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../assets/republica-a77296c8.otf);
+    src: url(../../src/assets/republica.otf);
   }
   .homepage {
     padding: 0;
@@ -175,54 +184,58 @@ onMounted(() => {
  
   
     
-      &::before{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100px;
-        background: linear-gradient(to top,#060c31b0, transparent);
-        z-index: 10000;
-      }
-      &::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #060c31b0;
-        z-index: 10000;
-        mix-blend-mode: color;
-      }
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        pointer-events: none;
-      }
-      #moon{
-        filter: drop-shadow(1px 1px 8px #4444dd);
-        margin-top: -1%;
-      }
-      #road {
-        margin-top: 10%;
-        z-index: 2;
-        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-        mask-image: linear-gradient( bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-      }
-      #mountain {
-        margin-top: -4%;
-      }
-      #bg{
-        filter: opacity(0.8);
-        margin-top: -3%;
-      }
+        &::before{
+          content: '';
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 100px;
+          background: linear-gradient(to top,#060c31b0, transparent);
+          z-index: 10000;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #060c31b0;
+          z-index: 10000;
+          mix-blend-mode: color;
+        }
+        
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          pointer-events: none;
+        }
+        #moon{
+          filter: drop-shadow(1px 1px 8px #4444dd);
+          margin-top: -1%;
+        }
+        #road {
+          margin-top: 10%;
+          z-index: 2;
+          -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+          mask-image: linear-gradient( bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+        }
+        #mountain {
+          margin-top: -4%;
+        }
+        #bg{
+          filter: opacity(0.8);
+          margin-top: -3%;
+        }
     }
-    
+    .btn {
+      background-color: #1b2735;
+      color: aliceblue;
+    }
 
     
    
