@@ -2,24 +2,28 @@
 
 <template class="">
 
-<div class="homepage  ">
-<Transition class="transition ease-in-out duration-[2000ms]">
+  <div class="homepage  ">
+
     <section class="homepage-section ">
-      <img :src="'../..../assets/bg1-b60daf09.png'"  id="bg1" alt="">
-      <div id="bg">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-      </div>
-      <img :src="'../assets/moon.png'" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
-      <img :src="'../assets/mountain.png'" id="mountain" alt="">
-      <img :src="'../assets/road1.png'" id="road" alt="">
-      <h2 id="text-head" class=""> Jónína Bjarnadóttir</h2>
-      <h2 id="text"> Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp; &nbsp; Grapich Designer</h2>
+      
+        <img src="../assets/bg1.png"  id="bg1" alt="">
+        <div id="bg w-full">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+        <img :src="'../../src/assets/moon.png'" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
+        <img :src="'../assets/mountain.png'" id="mountain" alt="">
+         <img :src="'../assets/road1.png'" id="road" alt="">
+        <h2 id="text-head" class=""> Jónína Bjarnadóttir</h2>
+        <h2 id="text"> Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp;  &nbsp; Grapich Designer</h2>
     </section>
-</Transition>
+
+    
+    
     <section class="projects-section">
-  
+      <iframe width="1497" height="664" src="https://www.youtube.com/embed/kiIBn49zY7I" title="INT -Jonina Bjarnadottir - VideoCV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 
     </section>

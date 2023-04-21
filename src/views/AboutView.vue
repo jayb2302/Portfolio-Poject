@@ -3,32 +3,36 @@
     
     <div class="flex flex-col justify-center align-top relative fixed about h-full   w-full">
       <h1 class="relative pt-10 opacity-10 static w-full p-15 pb-36 h-full pl-10 pr-10 text-sky-300 ">About Me...</h1>
-      <div class=" flex flex-col mystory absolute align-center w-4/6 h-3/6 border-l-3 border-shawow opacity-2 place-self-center ">
-        <button type="button" @click="showModal = !showModal" class=" transition ease-in-out duration-1000 z-10 w-30 hover:text-gray-50  ">
-          <div class="relative w-96 -ml-3 pt-6 h-auto">
-            <div class="flex outsidearrow w-6/12 h-14"><h2 class="arrow  w-full text-start pl-6 h-11 pt-2  ">My Story</h2></div>
+      <div class=" flex flex-col mystory absolute align-center w-8/12 h-4/6 border-l-3 border-shawow opacity-2 place-self-center ">
+        <div class="w-1/2">
+        <button type="button" @click="showModal = !showModal" class=" transition ease-in-out duration-1000 z-10 w-full h-30 hover:text-gray-50  ">
+          <div class="relative w-2/3 -ml-3 pt-6 h-2/4">
+            <div class="flex outsidearrow w-9/12 h-36"><h2 class="arrow  w-full text-start pl-6 h-30 pt-2  ">Story</h2></div>
           </div>           
         </button>
         <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10 w-30 hover:text-gray-50  ">
-          <div class="relative w-96 -ml-3 pt-6 h-auto ">
-            <div class="flex outsidearrow w-8/12 h-14"><h2 class="arrow  w-96 text-start pl-6 h-11 pt-2  ">Interests & Hobby</h2></div>
+          <div class="relative w-96 -ml-3 pt-6 h-2/4 ">
+            <div class="flex outsidearrow w-11/12 h-20"><h2 class="arrow  w-full text-start pl-6 h-11 pt-2  ">Hobbies</h2></div>
           </div>           
         </button>
         <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10 w-30 hover:text-gray-50  ">
-          <div class="relative w-96 -ml-3 pt-6 h-auto">
-            <div class="flex outsidearrow w-7/12 h-14"><h2 class="arrow  w-full text-start pl-6 h-11 pt-2  ">Music & Fun</h2></div>
+          <div class="relative w-96 -ml-3 pt-6 h-2/4">
+            <div class="flex outsidearrow w-9/12 h-20"><h2 class="arrow  w-full text-start pl-6 h-5 pt-2  ">Music</h2></div>
           </div>           
         </button>
+        </div>
+        <div class="w-full flex absolute justify-center">
 
-        <div class="flex absolute justify-end  pr-10 pt-14 absolute w-full h-2/3">
-          <div class="imgbg w-60 z-10 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
-            <img class=" w-60 p-0.5  " src="" alt="">
-          </div>
-          <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
-          <MusicDialog class="transition ease-in-out duration-1000" :show="showModalmusic" /> 
-          <HobbyDialog class="transition ease-in-out duration-1000" :show="showModalhobby" /> 
+          <div class="flex absolute justify-end pr-16  pt-12 absolute w-full h-1/2">
+            <div class="imgbg w-78 z-10 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
+              <img class=" w-full h-100 p-0.5 "  src="../assets/aboutmehero.png" alt="">
+            </div>
+            <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
+            <MusicDialog class="transition ease-in-out duration-1000" :show="showModalmusic" /> 
+            <HobbyDialog class="transition ease-in-out duration-1000" :show="showModalhobby" /> 
 
-        </div> 
+          </div> 
+        </div>
       </div>       
      
 
@@ -100,8 +104,7 @@ return {
           .outsidearrow{
             background: rgba(99, 94, 94, 0.356);
             clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0 50%, 0% 0%);
-           
-            height: 2.4rem;
+            height: 5.7rem;
             
 
             .arrow{
@@ -110,13 +113,17 @@ return {
               clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0 50%, 0% 0%);
               margin-left: -1%;
               margin-top: -0.1rem;
-              font-size: 1.1rem;
+              font-size: 3.5em;
+              height: 6rem;
             }
           }  
           .imgbg{
             background-image: linear-gradient( 217deg, rgba(106, 33, 81, 0.315), rgba(88, 36, 111, 0.38) 70.71%), 
                             linear-gradient( 127deg, rgba(102, 56, 166, 0.305), rgba(5, 242, 218, 0.445) 70.71%),
                             linear-gradient( 336deg, rgba(31, 106, 99, 0.693), rgba(12, 12, 81, 0.533) 70.71%);;
+            img{
+              height: 30rem;
+            }
           }
 
         }
