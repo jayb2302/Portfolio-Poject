@@ -37,7 +37,7 @@ import { RouterLink, RouterView } from 'vue-router'
   }
 header {
   display: flex;
-  background-image: url(../assets/bg1-b60daf09.png);
+  background-image: url(./assets/bg1.png);
   background-size: cover;
   background-blend-mode: screen;
   background-color: transparent;
