@@ -5,15 +5,15 @@
 <div class="homepage  ">
 <Transition class="transition ease-in-out duration-[2000ms]">
     <section class="homepage-section ">
-      <img :src="'../../src/assets/bg1.png'"  id="bg1" alt="">
+      <img :src="'../..../assets/bg1-b60daf09.png'"  id="bg1" alt="">
       <div id="bg">
           <div id="stars"></div>
           <div id="stars2"></div>
           <div id="stars3"></div>
       </div>
-      <img :src="'../../src/assets/moon.png'" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
-      <img :src="'../../src/assets/mountain.png'" id="mountain" alt="">
-      <img :src="'../../src/assets/road1.png'" id="road" alt="">
+      <img :src="'../assets/moon.png'" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
+      <img :src="'../assets/mountain.png'" id="mountain" alt="">
+      <img :src="'../assets/road1.png'" id="road" alt="">
       <h2 id="text-head" class=""> Jónína Bjarnadóttir</h2>
       <h2 id="text"> Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp; &nbsp; Grapich Designer</h2>
     </section>
@@ -74,7 +74,7 @@ onMounted(() => {
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../src/assets/republica.otf);
+    src: url(../assets/republica-a77296c8.otf);
   }
   .homepage {
     padding: 0;

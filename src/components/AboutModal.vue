@@ -22,9 +22,9 @@
                                         Together we moved to Esbjerg where I continue to learn, now to become a successful web developer and multimedia designer.</p>
                                     </div>
                                     <div class="flex flex-col w-3/6 gap-6  -ml-4 pr-12 pt-10  ">
-                                    <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="../../src/assets/sheep.png" alt="">
-                                    <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="../../src/assets/reykjavik.png" alt="">
-                                    <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="../../src/assets/eskifjordur.jpeg" alt="">
+                                    <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="../../dist/assets/sheep-a9098e94.png" alt="">
+                                    <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="../../dist/assets/reykjavik-0c35ae42.png" alt="">
+                                    <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="../../dist/assets/eskifjordur-73993f27.jpeg" alt="">
 
                                     </div>
                                 </div>
@@ -75,11 +75,11 @@ export default {
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../src/assets/republica.otf);
+    src: url(../../dist/assets/republica-a77296c8.otf);
   }
   @font-face {
     font-family: lettergothic;
-    src: url(../src/assets/lettergothic.otf);
+    src: url(../../dist/assets/lettergothic.otf);
   }
 
 
