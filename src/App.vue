@@ -2,22 +2,15 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
-
-
 <template>
   <header>
-   
-
     <div class="wrapper">
-
       <nav>
         <RouterLink class="transition ease-in duration-[2000ms]ease-in-out effect-shine" to="/">Home</RouterLink>
         <RouterLink class="effect-shine" to="/portfolio">Portfolio</RouterLink>
         <RouterLink class="effect-shine" to="/about">About</RouterLink>
-        
       </nav>
     </div>
-    
   </header>
 
   <footer class="w-full h-16">
@@ -33,11 +26,11 @@ import { RouterLink, RouterView } from 'vue-router'
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../../src/assets/republica.otf);
+    src: url(../assets/republica.otf);
   }
 header {
   display: flex;
-  background-image: url(../../src/assets/bg1.png);
+  background-image: url(./assets/bg1.png);
   background-size: cover;
   background-blend-mode: screen;
   background-color: transparent;

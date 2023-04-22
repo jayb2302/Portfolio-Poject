@@ -5,15 +5,15 @@
    <div class="homepage w-full">
       <section class="homepage-section flex  w-full">
       
-          <img class="w-full" :src="'../../src/assets/bg1.png'"  id="bg1" alt="">
-          <div id="bg w-full">
-              <div id="stars"></div>
-              <div id="stars2"></div>
-              <div id="stars3"></div>
-          </div>
-          <img :src="'../../src/assets/moon.png'" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
-          <img :src="'../../src/assets/mountain.png'" id="mountain" alt="">
-          <img :src="'../../src/assets/road1.png'" id="road" alt="">
+          <img src="../assets/bg1.png"  id="bg1" alt="">
+      <div id="bg">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+      </div>
+      <img src="../assets/moon.png" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
+      <img src="../assets/mountain.png" id="mountain" alt="">
+      <img src="../assets/road1.png" id="road" alt="">
           <h2 id="text-head" class=""> Jónína Bjarnadóttir</h2>
           <h2 id="text"> Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp;  &nbsp; Grapich Designer</h2>
       </section>

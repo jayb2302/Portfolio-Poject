@@ -98,7 +98,7 @@ const getPortfolio = () => {
         {
             id: 9,
             title: 'ESBJERG TASTE OFF',
-            description: 'PREMIERE - UX - PP',
+            description: 'PREMIERE PRO - UX - PP',
             image: '../../src/assets/kolski.webp',
             linkname: 'WEBSITE',
             
