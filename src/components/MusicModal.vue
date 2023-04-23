@@ -4,13 +4,13 @@
         <transition enter-active-class="transition ease-in duration-100 transform" enter-from-class="opacity-0" enter-to-class="opacity-100"
                     leave-active-class="transition ease-out duration-100 transform" leave-from-class="opacity-100" leave-to-class="opacity-0">
             <div ref="modal-backdrop" @click="closeModal" v-show="showModalmusic" class="modal-backdrop fixed bg-black w-full h-full bg-opacity-10 pr-4 z-10 inset-0 " >
-                     <div class="flex justify-center overflow-hidden hover:overflow-auto scrollbar h-full pt-14 mt-4 pr-0 ">
+                     <div class="flex justify-center overflow-hidden hover:overflow-auto scrollbar h-full pt-28 mt-3 pr-0 ">
                         <transition enter-active-class="transition ease-out duration-800 transform " enter-from-class="opacity-0 translate-y-10 scale-95" enter-to-class="opacity-100 translate-y-0 scale-100"
                             leave-active-class="ease-in duration-800" leave-from-class="opacity-100 translate-y-0 scale-100" leave-to-class="opacity-0 translate-y-10 translate-y-0 scale-95">
-                            <div class="modal bg-slate-800 overflow-auto hover:overflow-auto scrollbar scrollbar-thin  shadow-md shadow-slate-500 shadow-inner w-9/12 pt-4 h-5/6  rounded " role="dialog" ref="modal">
+                            <div class="modal bg-slate-800 overflow-auto hover:overflow-auto scrollbar scrollbar-thin  shadow-md shadow-slate-500 shadow-inner w-9/12 pt-5 h-4/6  rounded " role="dialog" ref="modal">
                                 <button class="btn absolute right-3 rounded-xl pt-0.5 pb-0.5 pl-2 pr-2 top-3 z-20" @click="closeModal">CLOSE<font-awesome-icon class="pl-2 icon" style="color: aliceblue;" id="closebutton" :icon="['fas', 'x']" /></button>
                                 <div class="aboutme flex flex-col h-full w-full  ">
-                                    <div class=" p-7 align-center w-full "> 
+                                    <div class=" pl-6 pr-6 pt-3 align-center w-full "> 
                                     <h1 class="ml-2 pb-5 ">My Favorite Music</h1>
                                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5BFn9SJLDEju0jZSdrD2zD?utm_source=generator&theme=0" width="100%" height="390" frameBorder="0" allowfullscreen="" class="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                                     </div>

@@ -7,8 +7,8 @@ const getPortfolio = () => {
             title: 'Flowershop Dögg',
             description: 'HTML - CSS - JS',
             // when ready to deploy
-            //  image: '../assets/dogg.webp',
-            // and copy all of ../src/assets into assets (after doing npm run build)
+            //  image: '../../assets/dogg.webp',
+            // and copy all of ../../src/assets into assets (after doing npm run build)
             image: '../../src/assets/dogg.webp',
             category: 'Web',
             color: '../../src/assets/dogg.png',
@@ -19,9 +19,9 @@ const getPortfolio = () => {
             id: 2,
             title: 'Longhorn BBQ',
             description: 'HTML - CSS - PHP',
-            image: '../../s../../src/assets/longhorn.webp',
+            image: '../../src/assets/longhorn.webp',
             category: 'Web',
-            color: '../../s../../src/assets/bbqpallate.png',
+            color: '../../src/assets/bbqpallate.png',
             h4:'COLOR-PALLATE :',
             detail: 'This is an outcome from final exam project for first semester in Multimedia Design, We were a group of 3 people that designed and coded this website for a real client. The client chose this website as a winner over all groups. It was made from HTML and CSS and then I transfered it to a PHP format so the client could use it in wordpress.',
 
@@ -96,14 +96,14 @@ const getPortfolio = () => {
             detail: 'I made this logo for a project that will be launched on 24th of April, until then I am not allowed to say much about it. The Client wanted a logo/art image that is representing secrets.'
         },
         {
-            id: 6,
-            title: 'Kölski',
-            description: 'PREMIERE PRO',
+            id: 9,
+            title: 'ESBJERG TASTE OFF',
+            description: 'PREMIERE PRO - UX - PP',
             image: '../../src/assets/kolski.webp',
             linkname: 'WEBSITE',
-            link: 'https://www.kolski.is/',
+            
             category: 'Video',
-            detail: 'Kölski is a suit company in Iceland that specializes in classy and stylish suits. They had a gentlemens night and asked me to record it and edit a video for future advertising. '
+            detail: 'This is my groups Idea of how to rebrand Esbjerg, Denmark. We decided to plan an event and tought about how we would promote it. We made an video, SoMe calendar & thought about alot of steps for content creations. PowerPoint slides an '
         },
     ])
     return {

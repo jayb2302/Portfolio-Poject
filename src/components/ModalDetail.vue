@@ -5,8 +5,8 @@
             <div @click="$emit('close')" class="modal-backdrop fixed bg-black w-full h-full bg-opacity-80 z-10 inset-0 " >
                 <transition enter-active-class="transition ease-in-out duration-900 transform " enter-from-class="opacity-0 translate-y-10 scale-95" enter-to-class="opacity-100 translate-y-0 scale-100"
                                 leave-active-class="ease-in duration-900" leave-from-class="opacity-100 translate-y-0 scale-100" leave-to-class="opacity-0 translate-y-10 translate-y-0 scale-95">
-                    <div class="flex justify-center mt-20 h-full ">
-                        <div class=" modal bg-slate-800  shadow-md shadow-slate-500 shadow-inner w-2/5 pt-7 pl-7 pr-5 h-4/5 rounded-lg " role="dialog" ref="modal">
+                    <div class="flex justify-center mt-48 md:mt-20 h-full ">
+                        <div class=" modal bg-slate-800 w-4/5 shadow-md shadow-slate-500 shadow-inner md:w-2/5  pt-7 pl-7 pr-5 h-4/5 rounded-lg " role="dialog" ref="modal">
                             <button class=" absolute right-3 top-2 z-20" @click="$emit('close')"><font-awesome-icon style="color: aliceblue;" id="closebutton" :icon="['fas', 'x']" /></button>
                         
                             <div class="portfolio-container overflow-auto hover:overflow-auto scrollbar ">
@@ -49,7 +49,7 @@
 
 <script setup >
 
-import portfoliodb from '../modules/portfoliodb'
+import portfoliodb from '../../src/modules/portfoliodb'
 
 import { toRefs, computed} from 'vue'
 
@@ -76,11 +76,11 @@ import { toRefs, computed} from 'vue'
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../assets/republica-a77296c8.otf);
+    src: url(../../src/assets/republica.otf);
   }
   @font-face {
     font-family: lettergothic;
-    src: url(../assets/lettergothic.otf);
+    src: url(../../src/assets/lettergothic.otf);
   }
   
 .modal {
