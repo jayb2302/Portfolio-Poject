@@ -16,6 +16,10 @@
   font-family: republica;
 }
 
+.rb {
+    border: 1px solid red !important;
+  }
+
 a,
 .green {
   text-decoration: none;

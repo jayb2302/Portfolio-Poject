@@ -4,7 +4,7 @@
   
   
     <main class="md:max-xl:flex">
-        <div class="portfolio-container pt-10">
+        <div class="portfolio-container pt-20">
             <!-- {{ state }} -->
             <div id="card" class="card " v-for="(item) in state" :key="item">
                 <div itemId="item.id" class="content"> 
@@ -17,7 +17,7 @@
                         <p class="description">{{ item.description }}</p>               
                         <img :src="item.image" style="height: 195px; width: 375px;" alt="">
                        
-                        <button class="btn" @click="toggleModal(item.id)" > More...</button>
+                        <button class="btn w-20 h-8"  @click="toggleModal(item.id)" > More...</button>
                     </span>    
                 </div>
             </div>
@@ -99,7 +99,7 @@
       color: #fff;
       z-index: 0;
       border-radius: 15px;
-      margin: 2% 0.5% 0.5% 0.5%;
+      margin: 2% 0.5% 2% 0.5%;
       p{
         font-size: .8em;
       }
@@ -180,7 +180,7 @@
         display: inline-grid;
         place-content: center;
         padding: .4em 1em;
-        font-size: 10px;
+        font-size: 15px;
         border: 0;
         text-transform: uppercase;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);

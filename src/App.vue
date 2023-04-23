@@ -4,11 +4,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink class="transition ease-in duration-[2000ms]ease-in-out effect-shine" to="/">Home</RouterLink>
-        <RouterLink class="effect-shine" to="/portfolio">Portfolio</RouterLink>
-        <RouterLink class="effect-shine" to="/about">About</RouterLink>
+    <div class="wrapper w-full pt-2 flex justify-center">
+      <nav class="text-4xl ">
+        <RouterLink class="transition ease-in duration-[2000ms]ease-in-out effect-shine text-1xl" to="/">Home</RouterLink>
+        <RouterLink class="effect-shine text-1xl" to="/portfolio">Portfolio</RouterLink>
+        <RouterLink class="effect-shine text-1xl" to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -35,7 +35,7 @@ header {
   background-blend-mode: screen;
   background-color: transparent;
   line-height: 1.5;
-  max-height: 100vh;
+ 
 
   .wrapper {
   display: flex;
@@ -135,29 +135,5 @@ footer {
   }
   
 }
-
-@media (max-width: 1240px) {
-  header {
-    display: flex;
-    place-items: center;
-   
-  .wrapper {
-    display: inline;
-    
-    place-items: space-evenly;
-    flex-wrap: wrap;
-    
-    nav {
-    margin-left: 0rem;
-    font-size: 1.5rem;
-    padding-top: 12%;
-    flex-direction: column;
-  
-  }
-  }
-}
-
-}
-
 
 </style>

@@ -30,12 +30,12 @@
                                                 <h2 class=" w-full absolute place-self-center text-center">Football</h2>
                                             </div>  
                                             <div class=" imgborder flex w-78 h-60">
-                                                <img class="w-full p-0.5  " src="../assets/music.png" alt="">
-                                                <h2 class=" w-full absolute place-self-center text-center">Music</h2>
+                                                <img class="w-full p-0.5  " src="../assets/snowboard.png" alt="">
+                                                <h2 class=" w-full absolute place-self-center text-center">Snowboarding</h2>
                                             </div>  
                                             <div class=" imgborder flex w-78 h-60">
-                                                <img class="w-full p-0.5  " src="../assets/music.png" alt="">
-                                                <h2 class=" w-full absolute place-self-center text-center">Music</h2>
+                                                <img class="w-full p-0.5  " src="../assets/programming.png" alt="">
+                                                <h2 class=" w-full absolute place-self-center text-center">Programming</h2>
                                             </div>                                            
                                         </div>
                                     </div>

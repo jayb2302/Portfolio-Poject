@@ -7,12 +7,12 @@
                      <div class="flex justify-center overflow-hidden hover:overflow-auto scrollbar h-full pt-14 mt-4 ">
                         <transition enter-active-class="transition ease-out duration-800 transform " enter-from-class="opacity-0 translate-y-10 scale-95" enter-to-class="opacity-100 translate-y-0 scale-100"
                             leave-active-class="ease-in duration-800" leave-from-class="opacity-100 translate-y-0 scale-100" leave-to-class="opacity-0 translate-y-10 translate-y-0 scale-95">
-                            <div class="modal bg-slate-800 overflow-auto hover:overflow-auto scrollbar scrollbar-thin  shadow-md shadow-slate-500 shadow-inner w-9/12 pt-4 h-5/6 mb-2 rounded " role="dialog" ref="modal">
+                            <div class="modal bg-slate-800 overflow-auto hover:overflow-auto scrollbar scrollbar-thin  shadow-md shadow-slate-500 shadow-inner w-9/12 pt-4 h-auto mb-2 rounded " role="dialog" ref="modal">
                                 <button class="btn absolute right-3 rounded-xl pt-0.5 pb-0.5 pl-2 pr-2 top-3 z-20" @click="closeModal">CLOSE<font-awesome-icon class="pl-2 icon" style="color: aliceblue;" id="closebutton" :icon="['fas', 'x']" /></button>
-                                <div class="aboutme flex flex-row h-40 w-full -pt-1 ">
-                                    <div class="w-4/6 mb-3"> 
-                                    <h1 class="ml-8 mb-2 ">My Story</h1>
-                                        <p class="w-5/6 h-auto text-start ml-7 mr-10 pr-2 mb-5 pl-5 pb-5 pt-5 leading-6" > I was born in a small town in the east of Iceland.
+                                <div class="aboutme flex flex-col justify-center lg:flex-row h-auto w-full pt-1 ">
+                                    <div class="w-12/12 lg:w-7/12 pt-2"> 
+                                        <h1 class="ml-8 mb-2 ">My Story</h1>
+                                        <p class="h-auto text-start ml-7 mr-10 pr-2 mb-5 pl-5 pb-5 pt-5 leading-6" > I was born in a small town in the east of Iceland.
                                         I crew up in Eskifjörður and then later moved to Reykjavík. <br> <br> In Reykjavík I took different classes trying to learn 
                                         as much as possible. I also became the student president before graduating in Art and Clothing technology. 
                                         After that I moved to Spain to study the language, people and cilture while attending bartending school
@@ -21,11 +21,10 @@
                                         Following that I worked at a ski resort before meeting my husband Jón and soon our beautiful Irena arrived. 
                                         Together we moved to Esbjerg where I continue to learn, now to become a successful web developer and multimedia designer.</p>
                                     </div>
-                                    <div class="flex flex-col w-2/6 gap-6  -ml-4 pr-12 pt-20  ">
-                                    <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="../assets/sheep.png" alt="">
-                                    <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="../assets/reykjavik.png" alt="">
-                                    <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="../assets/eskifjordur.jpeg" alt="">
-
+                                    <div class="flex flex-col justify-center w-full lg:w-5/12 gap-10   pt-20  ">
+                                      <img class=" w-10/12 h-46 -translate-y-3 place-self-center rotate-6" src="../assets/sheep.png" alt="">
+                                      <img class=" w-10/12 h-34 -translate-y-20 place-self-center mt-2 -rotate-6"  src="../assets/reykjavik.png" alt="">
+                                      <img class=" w-10/12 h-42 -translate-y-28 place-self-center rotate-6 " src="../assets/eskifjordur.jpeg" alt="">
                                     </div>
                                 </div>
                                
@@ -123,9 +122,7 @@ export default {
             transition: ease-in-out duration-1000 transform;
         }
 
-    }
-
-    
+    } 
 }
 
 

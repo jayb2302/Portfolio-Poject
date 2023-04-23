@@ -2,25 +2,26 @@
 
 <template class="">
   <Transition class="transition ease-in-out duration-[2000ms]">
-   <div class="homepage w-full">
-      <section class="homepage-section flex  w-full">
-      
-          <img src="../assets/bg1.png"  id="bg1" alt="">
-      <div id="bg">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-      </div>
-      <img src="../assets/moon.png" class="motion-safe:animate-pulse duration[2000]" id="moon" alt="">
-      <img src="../assets/mountain.png" id="mountain" alt="">
-      <img src="../assets/road1.png" id="road" alt="">
-          <h2 id="text-head" class=""> Jónína Bjarnadóttir</h2>
-          <h2 id="text"> Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp;  &nbsp; Grapich Designer</h2>
+   <div class="homepage w-full h-screen">
+      <section class="homepage-section flex  w-full h-screen">
+          <img src="../assets/bg1.png"  id="bg1" class="h-screen " alt="">
+            <div id="bg" class="w-full h-screen lg:h-5/5"> 
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </div>
+           <img src="../assets/moon.png" class="motion-safe:animate-pulse duration[2000] w-full h-1/4 md:h-screen lg:h-4/4 mt-20 lg:mt-0 " id="moon" alt="">
+          <img src="../assets/mountain.png" id="mountain" class="h-4/5 lg:h-4/5 w-full -mt-16 " alt="">
+          <img src="../assets/road1.png" id="road" class="h-screen  lg:w-full mt-8 z-10 lg:mt-20" alt="">
+          <h2 id="text-head" class="text-5xl  md:text-7xl w-full lg:text-7xl text-center lg:w-full absolute  top-64 mt-6 md:mt-10 lg:mt-12 leading-2"> Jónína Bjarnadóttir</h2>
+          <div class="text-[15px] md:text-2xl lg:text-4xl absolute justify-start -mt-9 -z-1 "> 
+          <h2 id="text" > Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp;  &nbsp; Grapich Designer</h2>
+          </div>
       </section>
   
       <section class="video-section pb-20 w-full h-full">
-        <div class="flex justify-center w-full  pt-32">
-          <iframe class="w-3/4 " height="600rem" src="https://www.youtube.com/embed/kiIBn49zY7I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="flex justify-center w-full  pt-12">
+          <iframe class="w-11/12 " height="600rem" src="https://www.youtube.com/embed/kiIBn49zY7I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section> 
       
@@ -80,35 +81,26 @@ onMounted(() => {
     font-family: republica;
     font-size: 35px;
     background-color: #03092de3;
-    min-height: 1200px;
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
-    
-    
+   
     .homepage-section {
       position: relative;
-      height: 100vh;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
       align-items: center;
-      left: 0;
-      right: 0;
       padding-left: 0;
       padding-top: 5%;
       #text-head {
-          position: relative;
           color: #fff;
-          font-size: 2em;
           z-index: 1;
           text-shadow: 3px 2px 2px #3b3535;
          
         }
         #text{
-          position: relative;
           color: #fff;
-          font-size: .8em;
           z-index: 1;
           text-shadow: 3px 2px 2px #3b3535, 0px -2px 1px #3b3535b6;
           text-transform: uppercase;
@@ -195,8 +187,6 @@ onMounted(() => {
           position: absolute;
           top: 0;
           left: 0;
-          width: 100%;
-          height: 100%;
           object-fit: cover;
           pointer-events: none;
        
@@ -204,7 +194,9 @@ onMounted(() => {
     }
       
   }
-   
+   .rb{
+    border: red;
+   }
     
    
   

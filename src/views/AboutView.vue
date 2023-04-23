@@ -1,5 +1,43 @@
 <template class="w-full ">
-  <main class="aboutme-section flex justify-center align-center relative pt-3 h-screen w-screen">
+  <main 
+    v-if="true"
+    class="aboutme-section  pt-10  md:h-screen  flex justify-center"
+  >
+    <div class="w-full ">
+      <div class="bgtext pt-8 text-6xl lg:text-9xl lg:pt-0">
+          <h1 class="opacity-20 text-sky-300 pb-5 ">Who am I?</h1>
+      </div>
+
+      <div class="flex w-11/12 md:w-8/12 lg:w-7/12 mx-auto lg:-mt-16 mystory border-l-3 relative p-3">
+        <div class="flex flex-col absolute lg:static bottom-0 ">
+            <button type="button" @click="showModal = !showModal" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50">
+              <div class="relative -ml-6 pt-6">
+                <div class="flex outsidearrow w-fit"><h2 class="text-3xl arrow pl-3 pt-2 pb-2 pr-6  ">Story</h2></div>
+              </div>           
+            </button>
+            <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
+              <div class="relative -ml-6 pt-6 ">
+                <div class="flex outsidearrow w-fit "><h2 class=" text-3xl arrow pl-3 pb-2 pr-6 pt-2  ">Hobbies</h2></div>
+              </div>           
+            </button>
+            <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
+              <div class="relative -ml-6 pt-6 pr-8 mr-2 ">
+                <div class="flex outsidearrow w-fit "><h2 class=" text-3xl arrow pl-3 pb-2 pt-2 pr-6  ">Music</h2></div>
+              </div>           
+            </button>
+          </div>
+          <div class="h-2/5 md:w-7/12 ml-auto imgbg p-2">
+            <img class="h-2/5 md:w-12/12 lg:w-full" src="../assets/aboutmehero.png" alt="">
+          </div>
+
+          <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
+          <MusicDialog class="transition ease-in-out duration-1000" :show="showModalmusic" /> 
+          <HobbyDialog class="transition ease-in-out duration-1000" :show="showModalhobby" /> 
+      </div>
+    </div>
+  </main>
+
+  <main v-else class="aboutme-section flex justify-center align-center relative pt-3 h-screen w-screen">
     
     <div class="flex flex-col justify-center align-top relative fixed about h-screen   w-screen">
       <div class="bgtext text-5xl pt-10 h-screen xl:text-9xl flex absolute">
@@ -23,11 +61,11 @@
             </div>           
           </button>
         </div>
-        <div class="w-full flex absolute overflow-hidden h-screen justify-center lg:justify-end ">
+        <div class="w-full flex absolute overflow-hidden h-screen justify-center lg:justify-end fa ">
 
-          <div class="  pt-5  w-screen ">
+          <div class="  pt-5  w-screen">
             <div class="flex absolute justify-center w-fit lg:w-11/12 imgbg z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
-              <img class="  w-fit p-1 "  src="../assets/aboutmehero.png" alt="">
+              <img class="  w-fit p-1 h-auto "  src="../assets/aboutmehero.png" alt="">
             </div>
             <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
             <MusicDialog class="transition ease-in-out duration-1000" :show="showModalmusic" /> 
@@ -122,25 +160,6 @@ return {
                             linear-gradient( 336deg, rgba(31, 106, 99, 0.693), rgba(12, 12, 81, 0.533) 70.71%);;
            
           }
-
         }
-
-        
-          
       }
-  
-  
-@media (min-width: 1024px) {
-  .aboutme-section{
-  
-    
-    display: flex;
-   
-    img{
-      height: 10,6rem;
-      width: 20.2rem;
-      justify-items: end;
-    }
-  }
-}
 </style>
