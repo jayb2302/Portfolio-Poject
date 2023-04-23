@@ -14,27 +14,27 @@
                                         <h1 class="ml-8  pb-2 ">Hobby & Interests</h1>
                                         <div class="imgbg flex gap-11 justify-center mt-1 flex-row flex-wrap h-full w-full p-1">
                                             <div class=" imgborder flex w-78 h-60">
-                                                <img class="w-full p-0.5  " src="../../src/assets/travel.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/travel.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Traveling</h2>
                                             </div>   
                                             <div class=" imgborder flex w-78 h-60">
-                                                <img class="w-full p-0.5  " src="../../src/assets/cooking.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/cooking.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Cooking</h2>
                                             </div>  
                                             <div class=" imgborder flex w-78 h-60">
-                                                <img class="w-full p-0.5  " src="../../src/assets/music.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div> 
                                             <div class=" imgborder flex w-78 h-60">
-                                                <img class="w-full p-0.5  " src="../../src/assets/football.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/football.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Football</h2>
                                             </div>  
                                             <div class=" imgborder flex w-78 h-60">
-                                                <img class="w-full p-0.5  " src="../../src/assets/music.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div>  
                                             <div class=" imgborder flex w-78 h-60">
-                                                <img class="w-full p-0.5  " src="../../src/assets/music.png" alt="">
+                                                <img class="w-full p-0.5  " src="../assets/music.png" alt="">
                                                 <h2 class=" w-full absolute place-self-center text-center">Music</h2>
                                             </div>                                            
                                         </div>

@@ -27,7 +27,7 @@
 
           <div class="  pt-5  w-screen ">
             <div class="flex absolute justify-center w-fit lg:w-11/12 imgbg z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
-              <img class="  w-fit p-1 "  src="../../src/assets/aboutmehero.png" alt="">
+              <img class="  w-fit p-1 "  src="../assets/aboutmehero.png" alt="">
             </div>
             <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
             <MusicDialog class="transition ease-in-out duration-1000" :show="showModalmusic" /> 

@@ -66,7 +66,7 @@ export default {
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../assets/republica-a77296c8.otf);
+    src: url(../assets/republica.otf);
   }
   @font-face {
     font-family: lettergothic;

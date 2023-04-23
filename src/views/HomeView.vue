@@ -70,7 +70,7 @@ onMounted(() => {
 <style lang="scss" scoped>
   @font-face {
     font-family: republica;
-    src: url(../../src/assets/republica.otf);
+    src: url(../assets/republica.otf);
   }
 
 
