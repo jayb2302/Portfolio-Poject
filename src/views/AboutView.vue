@@ -23,10 +23,10 @@
             </div>           
           </button>
         </div>
-        <div class="w-full flex absolute justify-center">
+        <div class="w-full flex absolute overflow-hidden h-screen justify-center lg:justify-end ">
 
           <div class="  pt-5  w-screen ">
-            <div class="flex absolute justify-center w-fit  lg:w-11/12 imgbg z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
+            <div class="flex absolute justify-center w-fit lg:w-11/12 imgbg z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
               <img class="  w-fit p-1 "  src="../../src/assets/aboutmehero.png" alt="">
             </div>
             <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
@@ -130,12 +130,17 @@ return {
       }
   
   
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .aboutme-section{
   
     
     display: flex;
-    
+   
+    img{
+      height: 10,6rem;
+      width: 20.2rem;
+      justify-items: end;
+    }
   }
 }
 </style>
