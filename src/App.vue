@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
   </header>
 
-  <footer class="w-full h-16">
+  <footer class="w-screen h-16">
     <a  href="https://www.linkedin.com/in/joninaa" target="_blank" rel="noopener noreferrer"><font-awesome-icon class="icon" :icon="['fab', 'linkedin-in']"/></a>
     <a  href="https://www.instagram.com/jaydiamondphotos/" target="_blank" rel="noopener noreferrer"><font-awesome-icon class="icon" :icon="['fab', 'instagram']"/></a>
     <a  href="https://www.facebook.com/joninaab/" target="_blank" rel="noopener noreferrer"><font-awesome-icon class="icon" :icon="['fab', 'facebook-f']"/></a>
@@ -39,13 +39,11 @@ header {
 
   .wrapper {
   display: flex;
-  width: 100%;
   place-items: center;
   position: absolute;
   z-index: 20002;
   
     nav {
-    width: 100%;
     font-size: 12px;
     text-align: center;
     margin-top: 0%;
@@ -69,7 +67,6 @@ header {
             from {
               mask-position: 150%;
             }
-            
             to {
             mask-position: -50%;
             }
@@ -91,7 +88,6 @@ footer {
   justify-content: center;
   gap: 15px;
   bottom: 0;
-  width: 100%;
   z-index: 53000;
   padding-bottom: 1%;
   margin-top: 5%;
@@ -139,60 +135,29 @@ footer {
   }
   
 }
-@media (max-width: 800px){
+
+@media (max-width: 1240px) {
   header {
     display: flex;
-   
+    place-items: center;
    
   .wrapper {
-  
-    place-items: space-between;
+    display: inline;
     
+    place-items: space-evenly;
+    flex-wrap: wrap;
     
     nav {
-    display: flex;
-    align-items: start;
     margin-left: 0rem;
-    font-size: 2rem;
-    padding-top: 1.8rem;
-    padding-left: 1.2rem;
+    font-size: 1.5rem;
+    padding-top: 12%;
     flex-direction: column;
-   
-    a{
-      border-left: 0px solid rgba(137, 175, 236, 0.5);
-
-    }
   
   }
   }
 }
+
 }
-// @media (max-width: 1240px) {
-//   header {
-//     display: flex;
-//     place-items: center;
-   
-//   .wrapper {
-//     display: inline;
-    
-//     place-items: space-evenly;
-//     flex-wrap: wrap;
-    
-//     nav {
-//     margin-left: 0rem;
-//     font-size: 1.5rem;
-//     padding-top: 12%;
-//     flex-direction: column;
-  
-//   }
-//   }
-// }
-
-
-
-
-  
-// }
 
 
 </style>

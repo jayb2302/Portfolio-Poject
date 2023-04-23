@@ -72,8 +72,7 @@ onMounted(() => {
     font-family: republica;
     src: url(../../src/assets/republica.otf);
   }
-$small: 630px;
-$medium: 900px;
+
 
 
   .homepage {
@@ -83,11 +82,10 @@ $medium: 900px;
     background-color: #03092de3;
     min-height: 1200px;
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
-    width: 100%;
+    
     
     .homepage-section {
       position: relative;
-      width: 100%;
       height: 100vh;
       overflow: hidden;
       display: flex;
@@ -99,34 +97,13 @@ $medium: 900px;
       right: 0;
       padding-left: 0;
       padding-top: 5%;
-      @media screen and (max-width: $small) {
-        padding-top: 0%;
-        width: 630px;
-        display: flex;
-        height: 100vh;
-        align-items: start;
-        text-align: end;
-        justify-content: baseline;
-        padding-right: 2%;
-        line-height: 50px;
-      }
-      @media screen and (min-width: $medium) {
-        //do Smth
-      }
-        #text-head {
+      #text-head {
           position: relative;
           color: #fff;
           font-size: 2em;
           z-index: 1;
           text-shadow: 3px 2px 2px #3b3535;
-          @media screen and (max-width: $small) {
-            font-size: 3.5rem;
-            margin-bottom: 5%;
-            padding-right: 5%;
-          }
-          @media screen and (min-width: $medium) {
-            //
-          }
+         
         }
         #text{
           position: relative;
@@ -135,14 +112,7 @@ $medium: 900px;
           z-index: 1;
           text-shadow: 3px 2px 2px #3b3535, 0px -2px 1px #3b3535b6;
           text-transform: uppercase;
-          @media screen and (max-width: $small) {
-            padding-top: 0%;
-            display: none;
-          
-          }
-          @media screen and (min-width: $medium) {
-            //do Smth
-          }
+         
         }
         #stars {
           width: 1px;
@@ -231,47 +201,13 @@ $medium: 900px;
           pointer-events: none;
        
         }
-        #moon{
-          filter: drop-shadow(1px 1px 8px #4444dd);
-          margin-top: -1%;
-          
-          @media screen and (min-width: $medium) {
-            //do Smth
-          }
-        }
-        #road {
-          margin-top: 10%;
-          z-index: 2;
-          -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-          mask-image: linear-gradient( bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-          @media screen and (max-width: $small) {
-            margin-top: 20%;
-            height: 100vh;
-          }
-          @media screen and (min-width: $medium) {
-            //do Smth
-          }
-        }
-        #mountain {
-          margin-top: -4%;
-          @media screen and (max-width: $small) {
-            width: 630px;
-            margin-top: -35%;
-            height: 100vh;
-          }
-          @media screen and (min-width: $medium) {
-            //do Smth
-          }
-        }
-        #bg{
-          filter: opacity(0.8);
-          margin-top: -3%;
-        }
     }
+      
+  }
    
     
    
-  }
+  
  
   
  

@@ -21,7 +21,7 @@
                                         Following that I worked at a ski resort before meeting my husband Jón and soon our beautiful Irena arrived. 
                                         Together we moved to Esbjerg where I continue to learn, now to become a successful web developer and multimedia designer.</p>
                                     </div>
-                                    <div class="flex flex-col w-3/6 gap-6  -ml-4 pr-12 pt-20  ">
+                                    <div class="flex flex-col w-2/6 gap-6  -ml-4 pr-12 pt-20  ">
                                     <img class=" w-80 h-46 -translate-y-3 translate-x-0.5 rotate-6" src="../../src/assets/sheep.png" alt="">
                                     <img class=" w-80 h-34 -translate-y-24 translate-x-28 mt-2 -rotate-6"  src="../../src/assets/reykjavik.png" alt="">
                                     <img class=" w-80 h-42 -translate-y-40 translate-x-0.5 rotate-6 " src="../../src/assets/eskifjordur.jpeg" alt="">

@@ -1,31 +1,33 @@
 <template class="w-full ">
-  <main class="aboutme-section flex justify-center align-center relative pt-3 h-screen w-full">
+  <main class="aboutme-section flex justify-center align-center relative pt-3 h-screen w-screen">
     
-    <div class="flex flex-col justify-center align-top relative fixed about h-full   w-full">
-      <h1 class="relative pt-10 opacity-10 static w-full p-15 pb-36 h-full pl-10 pr-10 text-sky-300 ">About Me...</h1>
-      <div class=" flex flex-col md:flex-row mystory absolute align-center w-8/12 h-4/6 border-l-3 border-shawow opacity-2 place-self-center ">
-        <div class="w-2/4 pt-56 md:-pt-10">
-        <button type="button" @click="showModal = !showModal" class=" transition ease-in-out duration-1000 z-10 w-full h-30 hover:text-gray-50  ">
-          <div class="relative w-2/3 -ml-3 pt-6 h-2/4">
-            <div class="flex outsidearrow w-9/12 h-36"><h2 class="arrow  w-full text-start pl-6 h-30 pt-2  ">Story</h2></div>
-          </div>           
-        </button>
-        <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
-          <div class="relative w-96 -ml-3 pt-6 h-2/4 ">
-            <div class="flex outsidearrow w-11/12 h-20"><h2 class="arrow  w-full text-start pl-6 h-11 pt-2  ">Hobbies</h2></div>
-          </div>           
-        </button>
-        <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10 w-30 hover:text-gray-50  ">
-          <div class="relative w-96 -ml-3 pt-6 h-2/4">
-            <div class="flex outsidearrow w-9/12 h-20"><h2 class="arrow  w-full text-start pl-6 h-5 pt-2  ">Music</h2></div>
-          </div>           
-        </button>
+    <div class="flex flex-col justify-center align-top relative fixed about h-screen   w-screen">
+      <div class="bgtext text-5xl pt-10 h-screen xl:text-9xl flex absolute">
+        <h1 class="pt-5 opacity-20 pb-36 pl-5 text-sky-300 ">Who am I?</h1>
+      </div>
+      <div class=" flex mystory absolute w-10/12 md:w-6/12 h-4/6 border-l-3 border-shawow opacity-2 place-self-center ">
+        <div class="w-screen flex flex-col justify-end  ">
+          <button type="button" @click="showModal = !showModal" class=" transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
+            <div class="relative w-screen -ml-3 pt-6">
+              <div class="flex outsidearrow w-fit h-1/6"><h2 class="text-2xl arrow pl-6 pt-2  ">Story</h2></div>
+            </div>           
+          </button>
+          <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
+            <div class="relative w-screen -ml-3 pt-6 ">
+              <div class="flex outsidearrow w-fit "><h2 class=" text-2xl arrow pl-6  pt-2  ">Hobbies</h2></div>
+            </div>           
+          </button>
+          <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
+            <div class="relative w-screen -ml-3 pt-6 ">
+              <div class="flex outsidearrow w-fit "><h2 class=" text-2xl arrow pl-6 pt-2  ">Music</h2></div>
+            </div>           
+          </button>
         </div>
         <div class="w-full flex absolute justify-center">
 
-          <div class="flex absolute justify-end pr-16  pt-12 absolute w-full h-1/2">
-            <div class="imgbg w-78 z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
-              <img class=" w-full h-100 p-0.5 "  src="../../src/assets/aboutmehero.png" alt="">
+          <div class="  pt-5  w-screen ">
+            <div class="flex absolute justify-center w-fit  lg:w-10 lg:-1/2 imgbg z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
+              <img class="  w-fit p-1 "  src="../../src/assets/aboutmehero.png" alt="">
             </div>
             <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
             <MusicDialog class="transition ease-in-out duration-1000" :show="showModalmusic" /> 
@@ -76,13 +78,10 @@ return {
   
     main{
         display: flex;
-        width: 100%;
         height: 100%;
         position: relative;
         background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
         h1 {
-          font-size:245px;
-          text-align: start;
           background-color: red;
           background-image: linear-gradient( -17deg, rgba(5, 242, 218, 0.161), rgba(71, 32, 88, 0.234) 70.71%), 
                             linear-gradient( 97deg, rgba(80, 66, 101, 0.779), rgba(5, 242, 218, 0.442) 70.71%),
@@ -93,7 +92,7 @@ return {
           -webkit-text-fill-color: transparent; 
           -moz-background-clip: text;
           -moz-text-fill-color: transparent;
-          line-height: 230px;
+          
         }
         .mystory {
           color: rgb(195, 193, 239);
@@ -104,7 +103,7 @@ return {
           .outsidearrow{
             background: rgba(99, 94, 94, 0.356);
             clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0 50%, 0% 0%);
-            height: 5.7rem;
+            
             
 
             .arrow{
@@ -113,17 +112,15 @@ return {
               clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0 50%, 0% 0%);
               margin-left: -1%;
               margin-top: -0.1rem;
-              font-size: 3.5em;
-              height: 6rem;
+              
+              
             }
           }  
           .imgbg{
             background-image: linear-gradient( 217deg, rgba(106, 33, 81, 0.315), rgba(88, 36, 111, 0.38) 70.71%), 
                             linear-gradient( 127deg, rgba(102, 56, 166, 0.305), rgba(5, 242, 218, 0.445) 70.71%),
                             linear-gradient( 336deg, rgba(31, 106, 99, 0.693), rgba(12, 12, 81, 0.533) 70.71%);;
-            img{
-              height: 30rem;
-            }
+           
           }
 
         }
@@ -136,7 +133,7 @@ return {
 @media (max-width: 1024px) {
   .aboutme-section{
   
-    min-height: 100vh;
+    
     display: flex;
     
   }
