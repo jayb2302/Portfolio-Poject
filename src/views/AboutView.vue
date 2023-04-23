@@ -5,28 +5,28 @@
       <div class="bgtext text-5xl pt-10 h-screen xl:text-9xl flex absolute">
         <h1 class="pt-5 opacity-20 pb-36 pl-5 text-sky-300 ">Who am I?</h1>
       </div>
-      <div class=" flex mystory absolute w-10/12 md:w-6/12 h-4/6 border-l-3 border-shawow opacity-2 place-self-center ">
-        <div class="w-screen flex flex-col justify-end  ">
+      <div class=" flex mystory absolute w-10/12 h-4/6 border-l-3 border-shawow opacity-2 place-self-center ">
+        <div class="w-screen flex flex-col justify-end pr-3 ">
           <button type="button" @click="showModal = !showModal" class=" transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
             <div class="relative w-screen -ml-3 pt-6">
-              <div class="flex outsidearrow w-fit h-1/6"><h2 class="text-2xl arrow pl-6 pt-2  ">Story</h2></div>
+              <div class="flex outsidearrow w-fit"><h2 class="text-3xl arrow pl-3 pt-2 pb-2 pr-6  ">Story</h2></div>
             </div>           
           </button>
           <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
             <div class="relative w-screen -ml-3 pt-6 ">
-              <div class="flex outsidearrow w-fit "><h2 class=" text-2xl arrow pl-6  pt-2  ">Hobbies</h2></div>
+              <div class="flex outsidearrow w-fit "><h2 class=" text-3xl arrow pl-3 pb-2 pr-6 pt-2  ">Hobbies</h2></div>
             </div>           
           </button>
           <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
-            <div class="relative w-screen -ml-3 pt-6 ">
-              <div class="flex outsidearrow w-fit "><h2 class=" text-2xl arrow pl-6 pt-2  ">Music</h2></div>
+            <div class="relative w-screen -ml-3 pt-6 pr-8 mr-2 ">
+              <div class="flex outsidearrow w-fit "><h2 class=" text-3xl arrow pl-3 pb-2 pt-2 pr-6  ">Music</h2></div>
             </div>           
           </button>
         </div>
         <div class="w-full flex absolute justify-center">
 
           <div class="  pt-5  w-screen ">
-            <div class="flex absolute justify-center w-fit  lg:w-10 lg:-1/2 imgbg z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
+            <div class="flex absolute justify-center w-fit  lg:w-11/12 imgbg z-5 drop-shadow-[3px_3px_3px_rgba(265,230,235,0.35)]"> 
               <img class="  w-fit p-1 "  src="../../src/assets/aboutmehero.png" alt="">
             </div>
             <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 
