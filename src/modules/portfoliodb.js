@@ -103,6 +103,7 @@ const getPortfolio = () => {
             linkname: 'VIDEO',
             link: 'https://youtu.be/u-H8ZVgUy8E',
             logo1: new URL('../assets/tasteofflogo.png', import.meta.url),
+            h4:'COLOR-PALLATE :',
             color: new URL ('../assets/tasteoffcolor.png', import.meta.url),
             category: 'Video - Design - UX',
             detail: 'This is my groups Idea of how to rebrand Esbjerg, Denmark. We decided to plan an event and tought about how we would promote it. We made an video, SoMe calendar & thought about alot of steps for content creations. PowerPoint slides an '

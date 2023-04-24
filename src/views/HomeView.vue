@@ -2,7 +2,7 @@
 
 <template class="">
   <Transition class="transition ease-in-out duration-[2000ms]">
-   <div class="homepage w-full h-screen">
+   <div class="homepage w-full h-full">
       <section class="homepage-section flex  w-full h-screen">
           <img src="../assets/bg1.png"  id="bg1" class="lg:w-full h-screen " alt="">
             <div id="bg" class="w-full h-screen lg:h-5/5"> 
@@ -10,12 +10,12 @@
                 <div id="stars2"></div>
                 <div id="stars3"></div>
             </div>
-           <img src="../assets/moon.png" class="motion-safe:animate-pulse duration[2000] w-full h-2/4 md:h-2/4 lg:h-screen mt-20 lg:mt-0 lg:pt-12 " id="moon" alt="">
+           <img src="../assets/moon.png" class="motion-safe:animate-pulse duration[2000] w-full h-2/4 md:h-2/4 lg:h-auto mt-20 lg:mt-0 lg:pt-0 " id="moon" alt="">
           <img src="../assets/mountain.png" id="mountain" class="h-4/5 lg:h-5/5 lg:mt-0 w-full -mt-16 " alt="">
           <img src="../assets/road1.png" id="road" class="h-screen lg:w-full mt-16 z-10 lg:mt-28" alt="">
-          <h2 id="text-head" class="text-5xl md:text-6xl w-full lg:text-7xl text-center lg:w-full absolute  top-64 mt-4 md:mt-10 lg:mt-28 leading-2"> Jónína Bjarnadóttir</h2>
-          <div class="text-[20px] pt-14 md:text-xl lg:text-4xl lg:pt-20 absolute justify-start -mt-12  -z-1 "> 
-          <h2 id="text" > Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp;  &nbsp; Grapich Designer</h2>
+          <h2 id="text-head" class=" text-4xl md:text-6xl w-full lg:text-7xl text-center lg:w-12/12 absolute  -mt-12 pb-20 lg:-mt-10 leading-2"> Jónína Bjarnadóttir</h2>
+          <div class="text-[15px] pt-0 md:text-xl lg:text-2xl align-center absolute text-center -mt-2 lg:mt-0 -z-1 "> 
+          <h2 class="w-full" id="text" > Web Developer  &nbsp; | &nbsp;  Film & Photographer  &nbsp; | &nbsp;  &nbsp; Graphic Designer</h2>
           </div>
       </section>
   
@@ -192,10 +192,15 @@ onMounted(() => {
        
         }
     }
+    video-section {
+      background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%)!important;
+
+    }
       
   }
    .rb{
     border: red;
+    border-width: 2px;
    }
     
    

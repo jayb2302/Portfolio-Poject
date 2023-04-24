@@ -5,10 +5,10 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <div class="wrapper w-full pt-2 flex justify-center">
-      <nav class="text-4xl ">
-        <RouterLink class="transition ease-in duration-[2000ms]ease-in-out effect-shine text-2xl md:text-2xl lg:text-3xl" to="/">Home</RouterLink>
-        <RouterLink class="effect-shine text-2xl md:text-2xl lg:text-3xl" to="/portfolio">Portfolio</RouterLink>
-        <RouterLink class="effect-shine text-2xl md:text-2xl lg:text-3xl" to="/about">About</RouterLink>
+      <nav class=" ">
+        <RouterLink class="transition ease-in duration-[2000ms]ease-in-out effect-shine text-1xl md:text-2xl lg:text-3xl" to="/">Home</RouterLink>
+        <RouterLink class="effect-shine text-1xl md:text-2xl lg:text-3xl" to="/portfolio">Portfolio</RouterLink>
+        <RouterLink class="effect-shine text-1xl md:text-2xl lg:text-3xl" to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -48,7 +48,6 @@ header {
     margin-top: 0%;
     font-family: republica;
     text-transform: uppercase;
-    font-size: 15px;
     padding-top: 2%;
       a {
         display: inline-block;
