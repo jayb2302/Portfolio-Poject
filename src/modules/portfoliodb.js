@@ -98,11 +98,13 @@ const getPortfolio = () => {
         {
             id: 9,
             title: 'ESBJERG TASTE OFF',
-            description: 'PREMIERE PRO - UX - PP',
-            image: new URL('../assets/kolski.webp', import.meta.url),
-            linkname: 'WEBSITE',
-            
-            category: 'Video',
+            description: 'PREMIERE - UX - PP',
+            image: new URL('../assets/tasteoff.png', import.meta.url),
+            linkname: 'VIDEO',
+            link: 'https://youtu.be/u-H8ZVgUy8E',
+            logo1: new URL('../assets/tasteofflogo.png', import.meta.url),
+            color: new URL ('../assets/tasteoffcolor.png', import.meta.url),
+            category: 'Video - Design - UX',
             detail: 'This is my groups Idea of how to rebrand Esbjerg, Denmark. We decided to plan an event and tought about how we would promote it. We made an video, SoMe calendar & thought about alot of steps for content creations. PowerPoint slides an '
         },
     ])

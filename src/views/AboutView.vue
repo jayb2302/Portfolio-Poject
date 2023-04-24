@@ -1,33 +1,33 @@
 <template class="w-full ">
   <main 
     v-if="true"
-    class="aboutme-section  pt-10  md:h-screen  flex justify-center"
+    class="aboutme-section  pt-10  md:h-auto  lg:h-screen lg:-pt-12 lg:pb-10 flex justify-center"
   >
-    <div class="w-full ">
-      <div class="bgtext pt-8 text-6xl lg:text-9xl lg:pt-0">
-          <h1 class="opacity-20 text-sky-300 pb-5 ">Who am I?</h1>
+    <div class="w-full h-screen md:h-screen  lg:h-4/5 ">
+      <div class="bgtext pt-4 text-6xl md:text-9xl  lg:text-9xl lg:pt-0">
+          <h1 class="opacity-20 text-sky-300 pb-5 md:pt-10 ">Who am I?</h1>
       </div>
 
-      <div class="flex w-11/12 md:w-8/12 lg:w-7/12 mx-auto lg:-mt-16 mystory border-l-3 relative p-3">
-        <div class="flex flex-col absolute lg:static bottom-0 ">
+      <div class="flex w-10/12 h-5/5 md:w-8/12  lg:w-9/12  lg:h-full  -mt-4 mx-auto lg:-mt-24 md:-mt-14  md:w-11/12 mystory border-l-3 relative p-3">
+        <div class="flex flex-col absolute  bottom-20  ">
             <button type="button" @click="showModal = !showModal" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50">
-              <div class="relative -ml-6 pt-6">
-                <div class="flex outsidearrow w-fit"><h2 class="text-3xl arrow pl-3 pt-2 pb-2 pr-6  ">Story</h2></div>
+              <div class="relative -ml-6 pt-6 pr-8 mr-2">
+                <div class="flex outsidearrow w-fit lg:w-fit"><h2 class="text-5xl md:text-5xl lg:text-6xl lg:w-full arrow pl-3 pt-3 pb-3 pr-8 lg:pr-12 lg:pt-3 lg:pb-3 md:pb-3 md:pt-3 md:pr-12 ">Story</h2></div>
               </div>           
             </button>
             <button type="button" @click="showModalhobby = !showModalhobby" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
-              <div class="relative -ml-6 pt-6 ">
-                <div class="flex outsidearrow w-fit "><h2 class=" text-3xl arrow pl-3 pb-2 pr-6 pt-2  ">Hobbies</h2></div>
+              <div class="relative -ml-6 pt-6 pr-8 mr-2  ">
+                <div class="flex outsidearrow w-fit lg:w-fit "><h2 class=" text-5xl md:text-5xl lg:text-6xl lg:w-full arrow pl-3 pb-3 pr-8 pt-3 lg:pr-12 lg:pt-3 lg:pb-3 md:pb-3 md:pt-3 md:pr-12 ">Hobbies</h2></div>
               </div>           
             </button>
             <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
               <div class="relative -ml-6 pt-6 pr-8 mr-2 ">
-                <div class="flex outsidearrow w-fit "><h2 class=" text-3xl arrow pl-3 pb-2 pt-2 pr-6  ">Music</h2></div>
+                <div class="flex outsidearrow  w-fit lg:w-fit  "><h2 class=" text-5xl md:text-5xl lg:text-6xl lg:w-full  arrow pl-3 pb-3 pr-8 pt-3 lg:pr-12 lg:pt-3 lg:pb-3 md:pb-3 md:pt-3 md:pr-12">Music</h2></div>
               </div>           
             </button>
           </div>
-          <div class="h-2/5 md:w-7/12 ml-auto imgbg p-2">
-            <img class="h-2/5 md:w-12/12 lg:w-full" src="../assets/aboutmehero.png" alt="">
+          <div class="h-4/5 w-10/12 md:w-5/12 ml-auto lg:h-5/6 lg:w-4/12 imgbg p-2 lg:mt-10 lg:mr-10 lg:p-1">
+            <img class="h-full md:w-12/12 lg:w-full lg:h-6/6 " src="../assets/aboutmehero.png" alt="">
           </div>
 
           <ModalDialog class="transition ease-in-out duration-1000" :show="showModal" /> 

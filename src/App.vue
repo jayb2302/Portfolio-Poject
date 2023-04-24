@@ -6,9 +6,9 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper w-full pt-2 flex justify-center">
       <nav class="text-4xl ">
-        <RouterLink class="transition ease-in duration-[2000ms]ease-in-out effect-shine text-1xl" to="/">Home</RouterLink>
-        <RouterLink class="effect-shine text-1xl" to="/portfolio">Portfolio</RouterLink>
-        <RouterLink class="effect-shine text-1xl" to="/about">About</RouterLink>
+        <RouterLink class="transition ease-in duration-[2000ms]ease-in-out effect-shine text-2xl md:text-2xl lg:text-3xl" to="/">Home</RouterLink>
+        <RouterLink class="effect-shine text-2xl md:text-2xl lg:text-3xl" to="/portfolio">Portfolio</RouterLink>
+        <RouterLink class="effect-shine text-2xl md:text-2xl lg:text-3xl" to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -44,7 +44,6 @@ header {
   z-index: 20002;
   
     nav {
-    font-size: 12px;
     text-align: center;
     margin-top: 0%;
     font-family: republica;

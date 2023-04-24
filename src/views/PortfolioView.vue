@@ -17,7 +17,7 @@
                         <p class="description">{{ item.description }}</p>               
                         <img :src="item.image" style="height: 195px; width: 375px;" alt="">
                        
-                        <button class="btn w-20 h-8"  @click="toggleModal(item.id)" > More...</button>
+                        <button class="btn w-20 h-8 md:w-28 lg:text-4xl"  @click="toggleModal(item.id)" > More...</button>
                     </span>    
                 </div>
             </div>
@@ -55,7 +55,7 @@
 
 .portfolio-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
     flex: 1;
@@ -64,7 +64,6 @@
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
     height: auto;
     padding-bottom: 5%;
-
     .content {
       z-index: 3;
       display: flex;
@@ -99,7 +98,7 @@
       color: #fff;
       z-index: 0;
       border-radius: 15px;
-      margin: 2% 0.5% 2% 0.5%;
+      margin: 2% 0.5% 4% 0.5%;
       p{
         font-size: .8em;
       }
@@ -155,7 +154,6 @@
           animation: rotate-hue linear 1500ms infinite;
           animation-play-state: paused;
           box-sizing: border-box;
-      
         }
         &:hover::after {
           animation-play-state: running;
@@ -268,7 +266,6 @@
       }
     }
   }
-
 
   @keyframes rotate-hue {
   to {

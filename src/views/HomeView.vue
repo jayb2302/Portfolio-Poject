@@ -4,17 +4,17 @@
   <Transition class="transition ease-in-out duration-[2000ms]">
    <div class="homepage w-full h-screen">
       <section class="homepage-section flex  w-full h-screen">
-          <img src="../assets/bg1.png"  id="bg1" class="h-screen " alt="">
+          <img src="../assets/bg1.png"  id="bg1" class="lg:w-full h-screen " alt="">
             <div id="bg" class="w-full h-screen lg:h-5/5"> 
                 <div id="stars"></div>
                 <div id="stars2"></div>
                 <div id="stars3"></div>
             </div>
-           <img src="../assets/moon.png" class="motion-safe:animate-pulse duration[2000] w-full h-1/4 md:h-screen lg:h-4/4 mt-20 lg:mt-0 " id="moon" alt="">
-          <img src="../assets/mountain.png" id="mountain" class="h-4/5 lg:h-4/5 w-full -mt-16 " alt="">
-          <img src="../assets/road1.png" id="road" class="h-screen  lg:w-full mt-8 z-10 lg:mt-20" alt="">
-          <h2 id="text-head" class="text-5xl  md:text-7xl w-full lg:text-7xl text-center lg:w-full absolute  top-64 mt-6 md:mt-10 lg:mt-12 leading-2"> Jónína Bjarnadóttir</h2>
-          <div class="text-[15px] md:text-2xl lg:text-4xl absolute justify-start -mt-9 -z-1 "> 
+           <img src="../assets/moon.png" class="motion-safe:animate-pulse duration[2000] w-full h-2/4 md:h-2/4 lg:h-screen mt-20 lg:mt-0 lg:pt-12 " id="moon" alt="">
+          <img src="../assets/mountain.png" id="mountain" class="h-4/5 lg:h-5/5 lg:mt-0 w-full -mt-16 " alt="">
+          <img src="../assets/road1.png" id="road" class="h-screen lg:w-full mt-16 z-10 lg:mt-28" alt="">
+          <h2 id="text-head" class="text-5xl md:text-6xl w-full lg:text-7xl text-center lg:w-full absolute  top-64 mt-4 md:mt-10 lg:mt-28 leading-2"> Jónína Bjarnadóttir</h2>
+          <div class="text-[20px] pt-14 md:text-xl lg:text-4xl lg:pt-20 absolute justify-start -mt-12  -z-1 "> 
           <h2 id="text" > Web Developer &nbsp; &nbsp; | &nbsp; &nbsp; Film & Photographer &nbsp; &nbsp; | &nbsp;  &nbsp; Grapich Designer</h2>
           </div>
       </section>
