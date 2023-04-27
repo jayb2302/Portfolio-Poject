@@ -1,3 +1,4 @@
+
 <template>
   
  <div v-if="showModal"><ModalDetail :id="id" @close="toggleModal"/></div> 
@@ -11,12 +12,9 @@
                     <span class="overlaycard"> 
                     {{ itemId }}
                         <p class="category" :class="item.category">{{ item.category }}</p>
-                        <RouterLink :to="{ name:'portfoliodetail', params: { id:item.id }}" >
                         <h3>{{ item.title }}</h3>
-                        </RouterLink>
                         <p class="description">{{ item.description }}</p>               
                         <img :src="item.image" style="height: 195px; width: 375px;" alt="">
-                       
                         <button class="btn w-20 h-8 md:w-28 lg:text-4xl"  @click="toggleModal(item.id)" > More...</button>
                     </span>    
                 </div>
