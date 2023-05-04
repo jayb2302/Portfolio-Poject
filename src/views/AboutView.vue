@@ -20,11 +20,11 @@
                 <div class="flex outsidearrow w-fit lg:w-fit "><h2 class=" text-2xl md:text-5xl lg:text-6xl lg:w-full arrow pl-3 pb-3 pr-8 pt-3 lg:pr-12 lg:pt-3 lg:pb-3 md:pb-3 md:pt-3 md:pr-12 ">Hobbies</h2></div>
               </div>           
             </button>
-            <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
-              <div class="relative -ml-6 pt-2 pr-8 mr-2 ">
-                <div class="flex outsidearrow  w-fit lg:w-fit  "><h2 class=" text-2xl md:text-5xl lg:text-6xl lg:w-full  arrow pl-3 pb-3 pr-8 pt-3 lg:pr-12 lg:pt-3 lg:pb-3 md:pb-3 md:pt-3 md:pr-12">Music</h2></div>
-              </div>           
-            </button>
+                <button type="button" @click="showModalmusic = !showModalmusic" class="transition ease-in-out duration-1000 z-10  hover:text-gray-50  ">
+                    <div class="relative -ml-6 pt-2 pr-8 mr-2 ">
+                      <div class="flex outsidearrow  w-fit lg:w-fit  "><h2 class=" text-2xl md:text-5xl lg:text-6xl lg:w-full  arrow pl-3 pb-3 pr-8 pt-3 lg:pr-12 lg:pt-3 lg:pb-3 md:pb-3 md:pt-3 md:pr-12">Music</h2></div>
+                    </div>           
+                </button>
           </div>
           <div class="h-fit w-11/12  md:w-5/12 ml-auto lg:h-fit lg:w-4/12 imgbg  lg:mt-10 lg:mr-10 lg:p-1">
             <img class="h-fit  md:w-12/12 lg:w-full lg:h-6/6 " src="../assets/aboutmehero.png" alt="">
